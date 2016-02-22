@@ -10,40 +10,23 @@
     <lastBuildDate>Mon, 22 Feb 2016 01:16:09 +0000</lastBuildDate>
     <atom:link href="http://www.dscomplete.com/index.xml" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>icdssadv</title>
-      <link>http://www.dscomplete.com/icdssadv/</link>
-      <pubDate>Mon, 22 Feb 2016 01:16:09 +0000</pubDate>
-      <author>j@hirniak.com (Jaroslaw Hirniak)</author>
-      <guid>http://www.dscomplete.com/icdssadv/</guid>
-      <description>&lt;p&gt;&lt;h2&gt;Calendar&lt;/h2&gt;
-&lt;iframe src=&#34;https://calendar.google.com/calendar/embed?showTabs=0&amp;amp;showCalendars=0&amp;amp;mode=AGENDA&amp;amp;height=600&amp;amp;wkst=2&amp;amp;bgcolor=%23ffcc33&amp;amp;src=0trnihuns8m4rnolideqgt1vuk%40group.calendar.google.com&amp;amp;color=%23875509&amp;amp;ctz=Europe%2FLondon&#34; style=&#34;border:solid 1px #777&#34; width=&#34;800&#34; height=&#34;600&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
-</description>
-    </item>
+      
     
-    <item>
-      <title>start</title>
-      <link>http://www.dscomplete.com/blog/2016/02/22/start/</link>
-      <pubDate>Mon, 22 Feb 2016 01:10:12 +0000</pubDate>
-      <author>j@hirniak.com (Jaroslaw Hirniak)</author>
-      <guid>http://www.dscomplete.com/blog/2016/02/22/start/</guid>
-      <description>&lt;p&gt;Desc&lt;/p&gt;
+      
+        
+          <item>
+            <title>start</title>
+            <link>http://www.dscomplete.com/blog/2016/02/22/start/</link>
+            <pubDate>Mon, 22 Feb 2016 01:10:12 +0000</pubDate>
+            <author>j@hirniak.com (Jaroslaw Hirniak)</author>
+            <guid>http://www.dscomplete.com/blog/2016/02/22/start/</guid>
+            <description>&lt;p&gt;Desc&lt;/p&gt;
 </description>
-    </item>
+          </item>
+        
+      
     
-    <item>
-      <title>course</title>
-      <link>http://www.dscomplete.com/course/</link>
-      <pubDate>Mon, 22 Feb 2016 01:10:05 +0000</pubDate>
-      <author>j@hirniak.com (Jaroslaw Hirniak)</author>
-      <guid>http://www.dscomplete.com/course/</guid>
-      <description>&lt;ol&gt;
-&lt;li&gt;Stack and tools&lt;/li&gt;
-&lt;li&gt;Time-series&lt;/li&gt;
-&lt;li&gt;&amp;hellip;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
+      
     
   </channel>
 </rss>
