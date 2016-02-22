@@ -10,19 +10,15 @@
     <lastBuildDate>Mon, 22 Feb 2016 01:10:12 +0000</lastBuildDate>
     <atom:link href="http://www.dscomplete.com/post/index.xml" rel="self" type="application/rss+xml" />
     
-      
-        
-          <item>
-            <title>start</title>
-            <link>http://www.dscomplete.com/blog/2016/02/22/start/</link>
-            <pubDate>Mon, 22 Feb 2016 01:10:12 +0000</pubDate>
-            <author>j@hirniak.com (Jaroslaw Hirniak)</author>
-            <guid>http://www.dscomplete.com/blog/2016/02/22/start/</guid>
-            <description>&lt;p&gt;Desc&lt;/p&gt;
+    <item>
+      <title>start</title>
+      <link>http://www.dscomplete.com/blog/2016/02/22/start/</link>
+      <pubDate>Mon, 22 Feb 2016 01:10:12 +0000</pubDate>
+      <author>j@hirniak.com (Jaroslaw Hirniak)</author>
+      <guid>http://www.dscomplete.com/blog/2016/02/22/start/</guid>
+      <description>&lt;p&gt;Desc&lt;/p&gt;
 </description>
-          </item>
-        
-      
+    </item>
     
   </channel>
 </rss>
