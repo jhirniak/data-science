@@ -3,8 +3,23 @@
   
   <url>
     <loc>http://dscomplete.com/</loc>
-    <lastmod>2016-02-22T02:50:51+00:00</lastmod>
+    <lastmod>2016-02-24T05:32:29+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://dscomplete.com/events/</loc>
+    <lastmod>2016-02-24T05:32:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dscomplete.com/links/</loc>
+    <lastmod>2016-02-24T05:26:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dscomplete.com/datasets/</loc>
+    <lastmod>2016-02-22T22:34:45+00:00</lastmod>
   </url>
   
   <url>
