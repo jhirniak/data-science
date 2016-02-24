@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta faccharset="utf-8">
+
+    <title>Data Science Complete - Introduction</title>
+
+    <meta name="description" content="Data Science Complete - Introduction to data science">
+    <meta name="author" content="Jaroslaw Hirniak">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/blood.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/monokai_sublime.css">
+    <link rel="stylesheet" href="css/extra.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+    <!-- Wrap all slides in a single "slides" class -->
+    <span class="slides">
+
+        <!-- BEGIN SLIDES -->
+
+        <section>
+            <h2>Introduction into</br>Data Science</h2>
+            <blockquote>
+                There are 2 types of people in the world:
+                those who can extrapolate from incomplete data.
+            </blockquote>
+        </section>
+
+        <section>
+            <h3>We live in Information Age</h3>
+            <img src="img/ie_0.png"/>
+            <div class="source">
+                <a href="http://www.washingtonpost.com/wp-dyn/content/article/2011/02/10/AR2011021004916.html">Washington
+                    Post</a>
+                <a href="https://youtu.be/EHTmxmuhZ10">Philip Evans TedTalk</a>
+            </div>
+        </section>
+
+        <section>
+            <h3>Information Age - Forecast</h3>
+            <img src="img/ie_1.png"/>
+            <div class="source">
+                <a href="http://www.washingtonpost.com/wp-dyn/content/article/2011/02/10/AR2011021004916.html">Washington
+                    Post</a>
+                <a href="https://youtu.be/EHTmxmuhZ10">Philip Evans TedTalk</a>
+            </div>
+        </section>
+
+        <section>
+            <p>Look how many people holds their phones (sign of time).</p>
+            <img src="img/obama-in-ohio_2.jpg" />
+        </section>
+
+        <section>
+            <p>But not only that!</p>
+
+            <p>President Barack Obama implemented executive order</p>
+            <blockquote>
+                Making Open and Machine Readable the New Default for Government Information.
+            </blockquote>
+
+            <div class="source">
+                <a href="https://www.whitehouse.gov/the-press-office/2013/05/09/executive-order-making-open-and-machine-readable-new-default-government-">Executive Order</a>
+                <a href="http://time.com/4051119/obama-big-data-federal-government/">How US Government Uses Big Data</a>
+            </div>
+
+            <p>But, many different governments adopt similar open data policies around the world, enabling changes and innovations on unthought before scale.</p>
+        </section>
+
+        <section>
+            IoT: soon every item is going to track physical world
+            <img src="img/iot.jpg"/>
+        </section>
+
+        <section>
+            ... and this data can be used in many surprising ways, e.g. using <a href="https://jawbone.com/support/articles/000008210/tracking-sleep-up24">Jawbone sleep tracking</a> for
+            <ul>
+                <li>finding Napa earthquake epicenters (by monitoring where people where waking up at given time) and</li>
+                <li>daylight saving time effect on our health and productivity (need to mash with other data).</li>
+            </ul>
+            <div class="source">
+                <a href="https://jawbone.com/blog/napa-earthquake-effect-on-sleep/">Napa Earthquake Effect on Bay Area Sleepers</a>
+                <a href="https://jawbone.com/blog/sleep-week/">Celebrating National Sleep Week</a>
+            </div>
+        </section>
+
+        <section>
+            <h3>Information Age - Observations</h3>
+            <ul>
+                <li>50% of data has IP address (is connected to each other)!</li>
+                <li>By 2020, almost all data will be connected.</li>
+                <li>The abundance and ubiquitousness of data changes business intelligence models (e.g. think
+                    Encyclopedia Britannica rendered obsolete by Wikipedia).
+                </li>
+                <li>We literally have a whole world in our pocket.</li>
+                <li>We no longer choose to be connected, but not to be.</li>
+                <li>Some companies accumulated lots of data over years, in a sense they sit on a pile of gold.</li>
+                <li><i>Data is our most valuable natural resource.</i></li>
+                <li><i>But, we need to be able to connect the dots.</i></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>How much data?</h3>
+            <table id="how-much-data">
+                <tr>
+                    <td>Google</td>
+                    <td>processes 20 PB a day (2008)<br/>crawls 20 B web pages a day (2012)</td>
+                </tr>
+                <tr>
+                    <td>Facebook</td>
+                    <td>&gt; 100 PB of user data<br/>+ 500 TB/day (2012)</td>
+                </tr>
+                <tr>
+                    <td>Amazon Web Services</td>
+                    <td>S3: 449 B objects<br/>peak 290k requests/second (2011)<br/>1T objects(2012)</td>
+                </tr>
+                <tr>
+                    <td>JPMorgan Chase</td>
+                    <td>150 PB on 50k+ servers running 15k apps (2011)</td>
+                </tr>
+                <tr>
+                    <td>CERN</td>
+                    <td>Produces 15 PB a year</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>World changed a lot, very quickly (1981 -> 2016)</h3>
+            <img src="img/640kb.jpg" />
+            <div class="source">
+                <a href="http://www.computerworld.com/article/2534312/operating-systems/the--640k--quote-won-t-go-away----but-did-gates-really-say-it-.html">The origin of 640KB quote</a></a>
+            </div>
+        </section>
+
+        <section>
+            <p>What was unthinkable even for visionaries 30 years ago, today seems obvious for everyone.</p>
+
+            <p>Information age revolution takes place right now and data scientist are at the edge of it...</p>
+            <p>... and this is why it is the sexiest job on the market.</p>
+
+            <p>But, who exactly is a data scientist?</p>
+
+            <div class="source">
+                <a href="http://mashable.com/2016/01/20/the-best-jobs-in-america-2016/#.ZXIUN_xlkqs">The best job in America has a median salary of over $116,000</a>
+            </div>
+        </section>
+
+        <section>
+            <h3>Who is a data scientist?</h3>
+            <div class="ds-box">
+                <div class="circle se"><p>Software Engineer</p></div>
+                <div class="circle stat"><p>Statistician</p></div>
+                <div class="circle biz"><p>Business Analyst</p></div>
+                <p>Data Scientist</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Who is a data scientist?</h3>
+            <ul>
+                <li>Business Analyst - to understand the data and problem, prioritize, what is a measure of success, etc.</li>
+                <li>Statistician - to be able to model the data, confidence level, back test it, etc.</li>
+                <li>Software Engineering - to be able to implement advanced algorithms, perform complex computations, and create a data product.</li>
+            </ul>
+
+            <p>As the word is "sexy" there are people who like to borrow the term, e.g. a person just running lots of Map/Reduce Hadoop jobs is not (necessarily) a data scientist.</p>
+        </section>
+
+        <section>
+            <p>Data scientists come in different flavours:</p>
+            <ul>
+                <li>Data businessperson</li>
+                <li>Data creative</li>
+                <li>Data developer</li>
+                <li>Data researcher</li>
+            </ul>
+        </section>
+
+        <section>
+            <img class="constrained" src="img/skills_mosaic.png" />
+        </section>
+
+        <section>
+            <p>Because there are so many different perspectives on data science, we sometimes read about different process description or taxonomy.</p>
+            <p>But, generally they are very similar are only reflect changes in the approach in analysing the data.</p>
+        </section>
+
+        <section>
+            <h3>Process</h3>
+            <ol>
+                <li>Data integration - pull data from many data management systems, resolve any incosistencies (e.g., missing values, different timezones), and reshape.</li>
+                <li>Data exploration - explore and visualize data. Get intuition about it and observe patterns.</li>
+                <li>Solution development - develop and implement algorithm solving your problem.</li>
+                <li>Knowledge management - if you need to manage user privileges or privacy</li>
+                <li>DS product ownership - make results available to non data scientists (e.g. analysis runnable from Django website)</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Alternative taxonomy (OSEMN / Snice)</h3>
+            <ul>
+                <li>Obtain</li>
+                <li>Scrub</li>
+                <li>Explore</li>
+                <li>Model</li>
+                <li>iNterpret</li>
+            </ul>
+        </section>
+
+        <section>
+            You may be surprised where data sciencei innovation awaits - big companies rather than startups
+        </section>
+
+        <section>
+            80/20 rule
+
+            but, we can have data science integrator or good platform and flip the rule to 20/80
+            much better use of ds time
+        </section>
+
+        <section>
+            precision/accuracy/generalisation tradeoffs
+        </section>
+
+        <section>
+            popcorn method
+        </section>
+
+        <section>
+            questions
+            What data do I have?
+            What data do I need?
+            What is the most evil thing I can do with data?
+        </section>
+
+        <section>
+            Software stack
+        </section>
+
+        <section>
+            <blockquote>
+                One to rule them all.
+            </blockquote>
+            Python as a glue
+        </section>
+
+        <section>
+            Pandas, Numpy, SciPy, sci-kit, etc.
+        </section>
+
+        <section>
+            Optimised python Cython, Numpy (timing example)
+        </section>
+
+        <section>
+            Spark (Spark takes over hadoop)
+        </section>
+
+        <section>
+            Nodebooks
+            IPython
+            --pylab
+            --ide
+        </section>
+
+        <section>
+            IDE, integration
+        </section>
+
+        <section>
+            <img src="img/mi-landscape.jpg"/>
+            http://www.shivonzilis.com/machineintelligence
+        </section>
+
+        <section>
+            Data
+            https://scraperwiki.com/
+            http://selectorgadget.com/
+        </section>
+
+        <section>
+            Real world examples
+        </section>
+
+        <section>
+            Netflix Challenge
+        </section>
+
+        <section>
+            Reading
+
+            Data driven
+            http://www.oreilly.com/data/free/data-driven.csp
+
+            http://www.dataists.com/2010/09/a-taxonomy-of-data-science/
+
+            http://www.datacommunitydc.org/blog/2012/08/data-scientists-survey-results-teaser
+
+            https://vimeo.com/35005701
+
+            http://www.shivonzilis.com/machineintelligence
+        </section>
+        <!-- END SLIDES -->
+
+
+</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>
