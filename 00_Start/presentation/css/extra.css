@@ -67,7 +67,7 @@ body p, li, td{
 }
 
 i {
-  color: steelblue;
+  color: #e7ad52;
 }
 
 .centered {
@@ -217,4 +217,35 @@ div.source:before {
   background-color: #134674;
   top: 0;
   left: 132px;
+}
+
+.circle.se p {
+  position: relative;
+  word-wrap: break-word;
+  left: 140px;
+  top: 200px;
+  width: 200px;
+  line-height: 1.1em;
+}
+
+.circle.stat p {
+  position: relative;
+  left: -50px;
+  bottom: 50px;
+}
+
+.circle.stat p {
+  position: relative;
+  left: -50px;
+  bottom: 50px;
+}
+
+.circle.biz p {
+  position: relative;
+  top: 75px;
+}
+
+img.constrained {
+  max-width: 75%;
+  max-height: 75%;
 }
