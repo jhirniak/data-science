@@ -282,3 +282,34 @@ blockquote.expanded, author.expanded, blockquote.expanded + author {
 ul.space-bullets li {
   padding-bottom: .4em;
 }
+
+img.plain {
+  background-color: white !important;
+}
+
+.reveal .slides {
+  height: 100%;
+  top: 0;
+  margin-top: 0;
+}
+
+.reveal .slides>section {
+  min-height: 90%;
+}
+
+.reveal .slides>section>section {
+  min-height: 100%;
+}
+
+section div.content, section div.margin {
+  display: inline-block;
+}
+
+section div.content {
+  max-width: 55%;
+  float: left;
+}
+
+section div.margin {
+  max-width: 45%;
+}

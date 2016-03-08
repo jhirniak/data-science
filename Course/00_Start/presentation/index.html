@@ -7,7 +7,7 @@
     <title>Data Science Complete - Introduction</title>
 
     <meta name="description" content="Data Science Complete - Introduction to data science">
-    <meta name="author" content="Jaroslaw Hirniak">
+    <meta name="author" content="John Hrafen">
 
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
@@ -51,20 +51,7 @@
         <section>
             <h2>Introduction to</h2>
             <h2>Data Science</h2>
-            <h3>by <a id="mm-1" href="mailto:nospam@thanks.com">Jaroslaw Hirniak</a></h3>
-
-            <script type='text/javascript'>
-                $(function () {
-                    $("a#mm-1").click(function (e) {
-                        console.log('Fired');
-                        var secret = function () { return atob('akBoaXJuaWFrLmNvbQ==') };
-                        $(this).attr("href", 'mailto:' + secret());
-                        $(this).text(secret());
-                        $(this).off("click");
-                        e.preventDefault();
-                    });
-                });
-            </script>
+            <h3>by <a class="mm" href="mailto:nospam@thanks.com">John Hrafen</a></h3>
         </section>
 
         <section>
@@ -509,6 +496,18 @@
         </section>
 
         <section>
+            <h4>Work smart and the lie of average...</h4>
+            <blockquote class="expanded" style="font-size: .7em">
+                [..] the United States air force had a serious problem: its pilots could not keep control of their planes [..]  the problems were so frequent and involved so many different aircraft that the air force had an alarming, life-or-death mystery on its hands. [..]  At first, the military brass pinned the blame on the men in the cockpits, citing “pilot error” as the most common reason in crash reports. This judgment certainly seemed reasonable, since the planes themselves seldom malfunctioned. [..] piloting skills were not the cause of the problem. If it wasn't human or mechanical error, what was it? [..] officials turned their attention to the design of the cockpit itself. [..] when the army was designing its first-ever cockpit, engineers had measured the physical dimensions of hundreds of pilots, and used this data to standardize the dimensions of the cockpit. [..]  In 1950, [..] measured more than 4,000 pilots on 140 dimensions of size [..] and calculated the average for each of these dimensions. [..] the consensus among fellow air force researchers was that the vast majority of pilots would be within the average range on most dimensions. After all, these pilots had already been pre-selected because they appeared to be average sized. [..] The scientists also expected that a sizable number of pilots would be within the average range on all 10 dimensions. But even Daniels was stunned when he tabulated the actual number.
+                <i>Zero.</i>
+                Out of 4,063 pilots, not a single airman fit within the average range on all 10 dimensions. [..] <i>There was no such thing as an average pilot.</i>
+            </blockquote>
+            <div class="source">
+                <a href="https://www.thestar.com/news/insight/2016/01/16/when-us-air-force-discovered-the-flaw-of-averages.html">When U.S. air force discovered the flaw of averages</a>
+            </div>
+        </section>
+
+        <section>
             <h2>Be a storyteller</h2>
         </section>
 
@@ -686,20 +685,7 @@
                 <li><a href="http://www.audible.co.uk/pd/Health-Personal-Development/Way-with-Words-Audiobook/B004F4HG0Y">Way with Words by Michael Drout</a></li>
             </ul>
 
-            <p class="fragment">Have other favourites? <a id="mm-2" href="mailto:nospam@thanks.com">Let me know!</a></p>
-
-            <script type='text/javascript'>
-                $(function () {
-                    $("a#mm-2").click(function (e) {
-                        console.log('Fired');
-                        var secret = function () { return atob('akBoaXJuaWFrLmNvbQ==') };
-                        $(this).attr("href", 'mailto:' + secret());
-                        $(this).text("Let me know @ " + secret() + "!");
-                        $(this).off("click");
-                        e.preventDefault();
-                    });
-                });
-            </script>
+            <p class="fragment">Have other favourites? <a class="mm" href="mailto:nospam@thanks.com">Let me know!</a></p>
         </section>
 
         <section data-state="fire-on" data-background-color="black">
@@ -713,29 +699,353 @@
         </section>
 
         <section>
-            <h3>How to best learn presenting?</h3>
-            <div class="fragment">
-                <h3 class="highlight">You got it! From experts!</h3>
-                <ul>
-                    <li><a href="https://www.reddit.com/r/dataisbeautiful/">r/dataisbeautiful</a> and counterexamples from <a href="https://www.reddit.com/r/dataisugly">r/dataisugly</a></li>
-                    <li><a href="http://www.amazon.co.uk/Edward-R.-Tufte/e/B000APET3Y/ref=sr_ntt_srch_lnk_1?qid=1456778035&sr=8-1">Any book by Edward Tufte</a></li>
-                    <li><a href="http://www.amazon.co.uk/Pop-Stand-Out-Any-Crowd/dp/0399532765">Pop!: Stand Out in Any Crowd by Sam Horn</a></li>
-                </ul>
-            </div>
-            <p class="fragment">Have other favourites? <a id="mm-3" href="mailto:nospam@thanks.com">Let me know!</a></p>
+            <blockquote>
+                Categories such as time, space, cause, and number represent the most general relations which exist
+                between things; surpassing all our other ideas in extension, they dominate all the details of our
+                intellectual life. If humankind did not agree upon these essential ideas at every moment, if they did
+                not have the same conception of time, space, cause, and number, all contact between their minds would be
+                impossible...
+            </blockquote>
+            <author>
+                <p>Emile Durkheim, Les formes élémentaires de la vie religieuse (Paris, 1912)</p>
+            </author>
+        </section>
 
-            <script type='text/javascript'>
-                $(function () {
-                    $("a#mm-3").click(function (e) {
-                        console.log('Fired');
-                        var secret = function () { return atob('akBoaXJuaWFrLmNvbQ==') };
-                        $(this).attr("href", 'mailto:' + secret());
-                        $(this).text("Let me know @ " + secret() + "!");
-                        $(this).off("click");
-                        e.preventDefault();
-                    });
-                });
-            </script>
+        <section>
+            <h3>Statistical Graphics</h3>
+            <p>Statistical graphics are instruments to help people reason about quantitive information.</p>
+            <p>Often the most effective way to describe, explore, and summarize a set of numbers - even a very large set - is to look at pictures of those numbers.</p>
+            <p>Of all methods for analyzing and communicating statistical information, well-designed data graphics are usually the simplest and at the same time the most powerful.</p>
+            <p>Human eye have amazing ability to extract a lot of information from a small area (example on the next slide).</p>
+            <p>So, how to visualize statistical information?</p>
+        </section>
+
+        <section>
+            <p class="small-font">The below map contains location and boundaries of 30,000 communes. Tabular representation of the same data would require 240,000 numbers. Graphical representations have incredible ability to compress data.</p>
+            <img class="stretch" src="img/communes-of-france.png" />
+        </section>
+
+        <section>
+            <h3>Graphical Excellence</h3>
+            <p>Excellence in statistical graphics consists of complex ideas communicated with clarity, precision, and efficiency. Graphical displays should</p>
+            <ul class="stretch">
+                <li>show the data</li>
+                <li>induce the viewer to think about the substance rather than about methodology, graphic design, the technology of graphic production, or something else; do not be a victim to fancy computer generated effects that only produce clutter</li>
+                <li>avoid distorting what the data have to say; present data in a simplest possible way, but not too simple</li>
+                <li>present may numbers in a small space; if you need to reference figure again you can avoid writing "fig 1.", but can post thumbinal instead</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Graphical Excellence</h3>
+            <ul class="stretch">
+                <li>make large data sets coherent</li>
+                <li>encourage the eye to compare different pieces of data</li>
+                <li>reveal the data at several levels of detail, from a board overview to the fine structure</li>
+                <li>serve a reasonably clear purpose: description, exploration, tabulation, or decoration</li>
+                <li>be closely integrated with the statistical and verbal description of a data set.</li>
+                <li>optimise data-ink used; if a line, dot, arrow, text, etc. do not contribute to increasing information in the graph then likely it should not be there</li>
+            </ul>
+        </section>
+
+        <section>
+            <p>Graphics need to make data clearer. Shape data to lead observer to conclusion.</p>
+
+            $$
+            \begin{equation}
+            \begin{split}
+            \mbox{lie factor} &= \frac{\mbox{size of effect shown in graphic}}{\mbox{size of effect in data}}
+            \end{split}
+            \end{equation}
+            $$
+
+            <p>Lie factor within $ [0.95, 1.05] $ is acceptable, beyond that means that data is misleading.</p>
+
+            <p>Can also define $ log LF $, where $ log LF < 0 $ means that data is underrepresented  and $ log LF > 0 $ means that is overrepresented.</p>
+
+            <p>Dimensionality expansion (e.g. showing stock price of crude oil in 3D barrels: 1D -> 3D) leads to $ LF $ explosion due to power factor.</p>
+        </section>
+
+        <section>
+            <h4>$ LF $ of $ 9.4 $</h4>
+            <p>In the below picture $ 454\% $ price increase is displayed as $ 4,280\% $ increase.</p>
+            <img src="img/crude-oil.jpg" alt="Crude Oil Price Increase with a Lie Factor of 9.4" />
+        </section>
+
+        <section>
+            <p>Here, the problem is too strong emphasis on design variation, without regard for reflecting the actual data variation.</p>
+
+            <p>The confounding of design variation with data variation over the surface of graphic leads to ambiguity and deception.</p>
+
+            <p>Reflect data dimensionality and do not inflate the dimensions (design dimensionality should be less or same as data dimensionality).</p>
+
+            <i>Show data variation, not design variation</i>
+
+            <p>However, it generally is a good idea to introduce other design variation (e.g. depth, shade, number instead of point, etc.) to represent data dimensions with less design dimensions.</p>
+        </section>
+
+        <section>
+            <h4>But, how bad can it be? Unfortunately, enormous amount of data printed over and over and published over the Internet are not only misguiding, but also painful to watch.</h4>
+        </section>
+
+        <section>
+            <h4>Probably the worst pie chart ever...</h4>
+            <img class="stretch plain" src="img/worst-pie.jpg" alt="Worst pie-chart ever" />
+            <div class="source">
+                <a href="https://www.vice.com/en_uk/read/foi-uk-drug-conviction-ethnicity-282">Why Are So Many Black People Being Convicted of Drug Dealing in London?</a>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div class="content">
+                    <p>Not only this pie chart data could be presented using a table:</p>
+                    <table style="font-size: .5em">
+                        <tr><td>Race</td><td>Convictions</td></tr>
+                        <tr><td>White</td><td>6584</td></tr>
+                        <tr><td>Black</td><td>2356</td></tr>
+                        <tr><td>Asian</td><td>1161</td></tr>
+                        <tr><td>Mixed</td><td>508</td></tr>
+                        <tr><td>Not stated</td><td>1046</td></tr>
+                        <tr><td>Other</td><td>124</td></tr>
+                    </table>
+                </div>
+                <div class="margin">
+                    <img class="plain" src="img/worst-pie.jpg" alt="Worst pie-chart ever" />
+                </div>
+            </div>
+
+            <div style="clear: both">
+                <p>Information is repeated with colour and numbers.</p>
+                <p>The same chart is repeated multiple times making it only less visible.</p>
+                <p>The pie charts are presented in perspective making the reading of graphical data even trickier.</p>
+                <p>Even data is wrong. Convictions are meaningless if we don't know, for instance, total population.</p>
+            </div>
+        </section>
+
+        <section>
+            <h4>The worst bar plot ever</h4>
+            <p>What is height of those bars? The 3D and plain color makes reading the data only harder, so what is a point of it?</p>
+            <p>What does the thickness represent? Couldn't those just be lines or even a table?</p>
+            <img src="img/pointless-3d.png" alt="Pointless 3D bars" />
+        </section>
+
+        <section>
+            <h4>Raccoon to snow ratio</h4>
+            <img src="img/raccoon-to-snow.png" alt="Raccoon to snow ratio" />
+            <p class="fragment">I actually my starting using this one. It is hilarious :)!</p>
+        </section>
+
+        <section>
+            <h3>Money Handling</h3>
+            <p>Money value changes over time with inflation, but also can be influenced by factors such as time-value of money. Simply plotting nominal value over time is going to lead to terribly bad conclusions.</p>
+            <p>When we talk about money over multiple years then often we will want to use adjusted value. But, it is not limited to money and applies to everything that changes value over time.</p>
+        </section>
+
+        <section>
+            <h3>Money Handling</h3>
+            <img class="stretch" src="img/nominal_and_adjusted_price-IBM.png" alt="Comparison of IBM in nominal and adjusted price"/>
+        </section>
+
+        <section>
+            <h3>Context principle</h3>
+            To be truthful and revealing, data graphics must bear on the question at heart of quantitative thinking: "Compared to what?". The emaciated, data-thin design should always provoke suspicion, for graphic often lie by omission, leaving out data sufficient for comparison.
+            <p><i>
+                Graphics must not quote data out of context.
+            </i></p>
+        </section>
+
+        <section>
+            <p>Local government could advertise a success of police, attributed to increased number of controls, in death reduction, but does the below graph tell the truth?</p>
+            <img class="stretch" src="img/traffic_deaths_2yrs.png" alt="Traffic Deaths for 2 Years in Detroit" />
+        </section>
+
+        <section>
+            <p>We can easily imagine data to look like in one of the subplots. Actually the red line here shows the actual data, with the thick line being the graph from the previous slide.</p>
+            <img class="stretch" src="img/traffic_deaths_interpolate.png" alt="Traffic Deaths for 2 Years in Detroit" />
+        </section>
+
+        <section>
+            <h3>No context = no information</h3>
+            <img class="stretch" src="img/russia-iran-war-spendings.jpg" alt="Total Military Spending of Iran and Russia" />
+            <p>Can you believe that it was published by World Bank?</p>
+        </section>
+
+        <section>
+            <h2>Principles of statistical data design</h2>
+        </section>
+
+        <section>
+            <h3>Dimension principle</h3>
+            <i>
+                The number of information-carrying (variable) dimensions depicted should not exceed the number of dimensions in the data.
+            </i>
+        </section>
+
+        <section>
+            <h3>Lie factor principle</h3>
+            $$ 0.95 < LF < 1.05 $$
+        </section>
+
+        <section>
+            <h3>Money principle</h3>
+            <i>
+                In time-series display of money, deflated and standarized units of monetary measurements are nearly always better than nominal units.
+            </i>
+        </section>
+
+        <section>
+            <h3>Data-ink principle</h3>
+        </section>
+
+        <section>
+            <h3>Context principle</h3>
+            <i>Graphics must not quote data out of context.</i>
+        </section>
+
+        <section>
+            <h3>No information, what do you even make graph for?</h3>
+            <img src="img/worthless-data-worthless-graph.png" alt="R = 0" />
+        </section>
+
+        <section>
+            Ambiguity, people can see different things in your data.
+
+            If something is non-cannonical it requires different representation or labelling aid.
+
+            Different people have different perceptions of data
+            perceived area of circle
+            diff context => different interpretations
+            make it clear using labels, do not leave anything ambigious
+        </section>
+
+        <section>
+            <h3>Reduce data understanding burden</h3>
+            <p>How many times do you need to travel between legend and regions in the following and still not to understand a thing</p>
+            <img src="img/label-hell.jpg" />
+        </section>
+
+        <section>
+            <img src="img/label-hell.png" />
+        </section>
+
+        <section>
+            <h3>Interesting data made unreadable</h3>
+            How to find who your occupation maries (pay attention to gender).
+            How to find occupations ... etc.
+            <a href="http://www.bloomberg.com/graphics/2016-who-marries-whom/"></a>
+        </section>
+
+        <section>
+            What the number mean?
+            <img src="img/foreplay.png" alt="Importance of fore-what?" />
+        </section>
+
+        <section>
+            <h3>Six principles of data integrity</h3>
+            <ol>
+                <li>The representation of numbers, as physically measured on the surface of the graphic intself, should be directly proprotional to the numerical quantities represented.</li>
+                <li>Clear, detailed, and thorough labeling should be used to defeat graphical distortion and ambiguity. Write out explanations of the data on the graphic itself. Label important events in the data.</li>
+                <li>Show data variation, not design variation.</li>
+                <li>In time-series displays of money, deflated and standarized units of monetary measurement are nearly always better than nominal units.</li>
+                <li>The numbe of information-carrying (variable) dimenions depicted should not exceed the number of dimensions in the data.</li>
+                <li>Graphics must not quote data out of context.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Graphical mediocrity</h3>
+            <ul>
+                <li>lie;</li>
+                <li>employment only of simple designs, understandarized time-series based on a small handful of data points;</li>
+                <li>missing the real news actually in the data;</li>
+                <li>underestimating the capability of the reader to read and understand the data</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Graphic mediocrity</h3>
+            <p>146.47% turnout in election sounds pretty good!</p>
+            <img src="img/turnout-of-146-per-cent.jpg" alt="146% turnout in Russian duma election" />
+            <div class="source">
+                <a href="http://gawker.com/5864945/putin-clings-to-victory-as-russias-voter-turnout-exceeds-146">Putin Clings to Victory as Russia's Voter Turnout Exceeds 146%</a>
+            </div>
+        </section>
+
+        <section>
+            <h3>Graphic mediocrity</h3>
+            <img src="img/graphics-lie-too.png" />
+            <div class="source">
+                <a href="http://www.nytimes.com/2015/12/13/opinion/campaign-stops/all-politicians-lie-some-lie-more-than-others.html">All Politicians Lie. Some Lie More Than Others.</a>
+            </div>
+        </section>
+
+        <section>
+            <h3>Data-Ink</h3>
+            Use ink as effectively as possible.
+            Data graphics should draw the viewer's attention to the sense and substance of the data, not to something else.
+            Esentially, statistical graphics should help people reason about quantitiative information.
+            <i>Above all else show the data.</i>
+        </section>
+
+        <section>
+            A large share of ink on a graphic should present data-information, the ink chaning as the data change. <i>Data-ink</i> is the non-erasable core of a graphic, the non-redundant ink arrange in response to variation in the numbers represented.
+
+            Data-ink ratio = data-ink / total ink used to print the graphic
+            = proprition of graphic's ink devoted to non-redundant display of data-information
+            = 1.0 - proprotion of a graphic that can be erased without loss of data-information.
+        </section>
+
+        <section>
+            Good example, very high data-ink ratio:
+            <img src="img/electroencephalograph.jpg" alt="Electroencephalograph showing stages of sleep in very efficient data-ink way" />
+        </section>
+
+        <section>
+            <h3>Grid clutter</h3>
+            Grids have no place in graphs. Only exception when one need to follow data, but then it needs to be less visible than data. Can be replaced with labels, etc.
+            <img class="stretch" src="img/grid.png" alt="Grid Clutter"/>
+        </section>
+
+        <section>
+            <h3>Some ink saving can be found where you do not expect them</h3>
+            Example, symmetry. When analyzing faces, wazes, etc., people examine only one side and if other is symmetric then once they quickly find it they stop analysing it. So, we can save half-the-ink by dividing along the symmetry. Also if we have asymetry then we can easily indicate it by displaying the whole.
+            <a href="https://en.wikipedia.org/wiki/Chernoff_face">Chernoff faces</a>
+        </section>
+
+        <section>
+            <h3>Sometimes good also to add data</h3>
+            To not force people to connect right and left edge (e.g. maps).
+            Here, we use redundancy to lessen the cognitive burden.
+        </section>
+
+        <section>
+            Duck clutter
+            <img src="img/can-clutter.gif" alt="Unnecessary can-duck in cans wasted since 1972" />
+        </section>
+
+        <section>
+            <h3>Statistical Illustrator Toolbox</h3>
+            <ul>
+                <li>data maps</li>
+                <li>time-series</li>
+                <li>space-time narrative design</li>
+                <li>relation graphics</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Data Maps</h3>
+            <div class="zoom-me" data-zoomed="img/cholera-outbreak-map.jpg">
+            <img style="height:480px;" src="img/cholera-outbreak-map.jpg" alt="John Snow Cholera Outbreak Map"/>
+                </div>
+        </section>
+
+        <section>
+            <h2>Data Maps</h2>
+            The maps repay careful study. Notice how quickly and naturally our attention has been directed toward exploring the substantive content of the data rather than toward questions of methodology and technique.
+
+            John Snow's map lead to removal of water pump handle that was spreading Cholera and in the result saving hundreds of lives.
         </section>
 
         <section>
@@ -747,9 +1057,39 @@
         </section>
 
         <section>
+            <h3>Time-series</h3>
+            The most frequently used form of graphic design (about 75%).
+            <blockquote>
+                With one dimension marching along the regular rhythm of seconds, minutes, hours, days, weeks, months, years, centuries, or millennia, the natural ordering of the time scale gives this design a strength and efficiency o interpretation found in no other graphic arrangement.
+            </blockquote>
+            Best for big data sets with real variabiliy.
+
+            Small, noncomparative, highly labeled data sets usually belong in tabels.
+
+            Different ways of incorporating time.
+
+            Life cycle of japan beetle
+
+            <img src="img/japanese-beetle.jpg" alt="The Life Cycle of Japanese Beetle"/>
+        </section>
+
+        <section>
             <h4>Pie chart explaining why pie charts are useless</h4>
             <img src="img/pyramid-pie.png" />
             <p>You have to give it - both entertaining and making a point.</p>
+        </section>
+
+        <section>
+            <h3>How to best learn presenting?</h3>
+            <div class="fragment">
+                <h3 class="highlight">You got it! From experts!</h3>
+                <ul>
+                    <li><a href="https://www.reddit.com/r/dataisbeautiful/">r/dataisbeautiful</a> and counterexamples from <a href="https://www.reddit.com/r/dataisugly">r/dataisugly</a></li>
+                    <li><a href="http://www.amazon.co.uk/Edward-R.-Tufte/e/B000APET3Y/ref=sr_ntt_srch_lnk_1?qid=1456778035&sr=8-1">Any book by Edward Tufte</a></li>
+                    <li><a href="http://www.amazon.co.uk/Pop-Stand-Out-Any-Crowd/dp/0399532765">Pop!: Stand Out in Any Crowd by Sam Horn</a></li>
+                </ul>
+            </div>
+            <p class="fragment">Have other favourites? <a class="mm" href="mailto:nospam@thanks.com">Let me know!</a></p>
         </section>
 
         <section>
@@ -1552,6 +1892,11 @@
 
         transition: 'slide', // none/fade/slide/convex/concave/zoom
 
+        math: {
+            mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+            config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+        },
+
         // Optional reveal.js plugins
         dependencies: [
             {
@@ -1577,7 +1922,8 @@
             }
             },
             {src: 'plugin/zoom-js/zoom.js', async: true},
-            {src: 'plugin/notes/notes.js', async: true}
+            {src: 'plugin/notes/notes.js', async: true},
+            { src: 'plugin/math/math.js', async: true }
         ]
     });
 
@@ -1607,6 +1953,17 @@
         var years = (new Date()).getFullYear() - new Date(-334);
         console.log('Years since Aristotle ', years);
         $('#time-since-aristotle').text(years);
+
+        $(function () {
+            $("a.mm").click(function (e) {
+                console.log('Revealed e-mail address.');
+                var secret = function () { return atob('am9obkBocmFmZW4uY29t') };
+                $(this).attr("href", 'mailto:' + secret());
+                $(this).text(secret());
+                $(this).off("click");
+                e.preventDefault();
+            });
+        });
     });
 
     Reveal.addEventListener('slidechanged', function (event) {
