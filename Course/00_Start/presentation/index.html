@@ -1144,14 +1144,12 @@
             <blockquote>
                 With one dimension marching along the regular rhythm of seconds, minutes, hours, days, weeks, months, years, centuries, or millennia, the natural ordering of the time scale gives this design a strength and efficiency o interpretation found in no other graphic arrangement.
             </blockquote>
-            Best for big data sets with real variabiliy.
+            Best for big data sets with real variability.
+        </section>
 
-            Small, noncomparative, highly labeled data sets usually belong in tabels.
-
-            Different ways of incorporating time.
-
-            Life cycle of japan beetle
-
+        <section>
+            <h3>Life cycle of japan beetle</h3>
+            <p>Interesting form of a time-series.</p>
             <img src="img/japanese-beetle.jpg" alt="The Life Cycle of Japanese Beetle"/>
         </section>
 
@@ -1199,9 +1197,7 @@
         </section>
 
         <section>
-            Since, 2011
-            Advanced field - whole degree. Will not go into detail.
-            Great reviews
+            Statistics and machine learning are very vast fields of knowledge. Here, we will just outline most commonly used techniques and remind the fundamentals.
         </section>
 
         <section>
@@ -1213,152 +1209,186 @@
         </section>
 
         <section>
-            <h4>Birth of Machine Intelligence</h4>
-            Computers are learning to think, read, and write. They’re also picking up human sensory function, with the ability to see and hear (arguably to touch, taste, and smell, though those have been of a lesser focus). Machine intelligence technologies cut across a vast array of problem types (from classification and clustering to natural language processing and computer vision) and methods (from support vector machines to deep belief networks). All of these technologies are reflected on this landscape.
-            This doesn't include big data
-            Selected from a list of 2,529 companies.
-
-            The giants in search (Google, Baidu), social networks (Facebook, LinkedIn, Pinterest), content (Netflix, Yahoo!), mobile (Apple) and e-commerce (Amazon) are in an incredible position. They have massive datasets and constant consumer interactions that enable tight feedback loops for their algorithms (and these factors combine to create powerful network effects) — and they have the most to gain from the low hanging fruit that machine intelligence bears.
-
-            big corpo - access to godfathers and great data sets
-
-            Big companies have an inherent advantage and it’s likely that the ones who will win the machine intelligence race will be even more powerful than they are today. However, the good news for the rest of the world is that the core technology they develop will rapidly spill into other areas, both via departing talent and published research.
-            Similar to the big data revolution, which was sparked by the release of Google’s BigTable and BigQuery papers, we will see corporations release equally groundbreaking new technologies into the community. Those innovations will be adapted to new industries and use cases that the Googles of the world don’t have the DNA or desire to tackle.
-
-            Opportunities for entrepreneurs:
-            “My company does deep learning for X”
-
-            https://medium.com/@shivon/the-current-state-of-machine-intelligence-f76c20db2fe1#.edte5vkf3
-            https://github.com/Bloomberg-Beta/Manual
-
-            Machine intelligence already helps us get the important business information we need more quickly, monitors critical systems, feeds our population more efficiently, reduces the cost of health care, detects disease earlier, and so on.
-
-            https://medium.com/machine-intelligence-report/the-current-state-of-machine-intelligence-2-0-a9e0bab95511#.jkunsbsdg
+            <h3>Birth of Machine Intelligence</h3>
+            <blockquote>
+            Computers are learning to think, read, and write. They're also picking up human sensory function, with the ability to see and hear (arguably to touch, taste, and smell, though those have been of a lesser focus). Machine intelligence technologies cut across a vast array of problem types (from classification and clustering to natural language processing and computer vision) and methods (from support vector machines to deep belief networks).
+            </blockquote>
         </section>
 
         <section>
-            Perhaps you heard recently about a new algorithm that can drive a car? Or invent a recipe? Or scan a picture and find your face in a crowd?  It seems as though every week companies are finding new uses for algorithms that adapt as they encounter new data. Last year Wired quoted an ex-Google employee as saying that “Everything in the company is really driven by machine learning.”
+            <h3>Birth of Machine Intelligence</h3>
+            <blockquote>
+                The giants in search (Google, Baidu), social networks (Facebook, LinkedIn, Pinterest), content (Netflix, Yahoo!), mobile (Apple) and e-commerce (Amazon) are in an incredible position. They have massive datasets and constant consumer interactions that enable tight feedback loops for their algorithms (and these factors combine to create powerful network effects) — and they have the most to gain from the low hanging fruit that machine intelligence bears.
+            </blockquote>
+        </section>
 
-            Machine learning has tremendous potential to transform companies, but in practice it’s mostly far more mundane than robot drivers and chefs. Think of it simply as a branch of statistics, designed for a world of big data. Executives who want to get the most out of their companies’ data should understand what it is, what it can do, and what to watch out for when using it.
+        <section>
+            <h3>Birht of Machine Intelligence</h3>
+            <blockquote>
+                Similar to the big data revolution, which was sparked by the release of Google’s BigTable and BigQuery papers, we will see corporations release equally groundbreaking new technologies into the community. Those innovations will be adapted to new industries and use cases that the Googles of the world don’t have the DNA or desire to tackle.
+            </blockquote>
+        </section>
 
-            Not just big data, but wide data
+        <section>
+            <h4>What Machine Learning can do for you?</h4>
+            <ul>
+                <li>make personalized recommendations</li>
+                <li>forecasting long-term loyalty</li>
+                <li>anticipating the future performance of employees</li>
+                <li>rating the credit risk of loan applicants</li>
+                <li>suggest friends or coworkers</li>
+                <li>interpolate missing data</li>
+                <li>suggest which customers to approach with special offer</li>
+                <li>find what products are bought together</li>
+                <li>reduce data</li>
+                <li>predict future behaviour</li>
+                <li>estimate campaign revenue</li>
+                <li>measure in vivo experiments performance</li>
+                <li>simplify decision process</li>
+                <li>and much more...</li>
+        </section>
 
-            Predictions, not causality
+        <section>
+            <a href="http://scikit-learn.org/stable/tutorial/machine_learning_map/">Machine Learning Algorithms</a>
+            <div class="zoom-me" data-zoomed="img/sci-kit-learn-choosing-algo.png">
+                <img src="img/sci-kit-learn-choosing-algo-thumb.png" alt="sci-kit learn - choosing algorithm cheatsheet">
+            </div>
+        </section>
 
-            The most common application of machine learning tools is to make predictions. Here are a few examples of prediction problems in a business:
+        <section>
+            <h3>Lift</h3>
+            <p><i>Measure of targeting model (subset of population) performance at predicting or classification response measured against the whole population.</i> Otherwise, how much our discovery about certain group is significant, how does it compare to random sample.</p>
+            <p>The higher the lift the more significant the data.</p>
+            <p>For example, in credit risk decision tree, let say we classified a person with $ \mbox{income} > 50,000 $ and $ \mbox{age} < 35 $ with credit prepayment risk estimated at $ 25 \% $ compared to $ 5 \% $ for the whole population. Hence, our lift is $ \frac{25 \%}{5 \%} = 5.0$. </p>
+        </section>
 
-            Making personalized recommendations for customers
-            Forecasting long-term customer loyalty
-            Anticipating the future performance of employees
-            Rating the credit risk of loan applicants
-            These settings share some common features. For one, they are all complex environments, where the right decision might depend on a lot of variables (which means they require “wide” data). They also have some outcome to validate the results of a prediction – like whether someone clicks on a recommended item, or whether a customer buys again. Finally, there is an important business decision to be made that requires an accurate prediction.
+        <section>
+            <h4>Typical Machine Learning Tasks</h4>
+            <ul class="stretch">
+                <li>classification / class probability estimation - assignment of individuals to classes, e.g. people who are going to default on credit payment</li>
+                <li>scoring / probability estimation - simlar to classification, but with probability or numerical score, e.g. 85 out of 100 on prepayment score</li>
+                <li>regression / value estimation, e.g. how many people will renew their contracts given offer X</li>
+                <li>similarity matching - identifying similar individuals based on data know about them, e.g. people similar to the best paying customers</li>
+                <li>clustering - grouping of individuals without any labels, with the goal of discovering if population forms any clusters, e.g. investigating if sales team should prepare multiple different offers</li>
+            </ul>
+        </section>
 
-            https://hbr.org/2015/07/what-every-manager-should-know-about-machine-learning
+        <section>
+            <h4>Typical Machine Learning Tasks</h4>
+            <ul class="stretch">
+                <li>co-occurrence grouping - grouping entities based on transactions involving them, e.g. what items are commonly purchuased together</li>
+                <li>profiling / behaviour description - attempts to characterize typical behaviour of a group, e.g. how many gallons of milk typical household buys weekly</li>
+                <li>link prediction - predicts connections between data items, e.g. friends (Facebook) and colleagues (LinkedIn) suggestions</li>
+                <li>data reduction - replacing large data set with smaller, e.g. replacing movie preferences with genres preference</li>
+                <li>casual modeling - discovering what events and actions influence other, e.g. website A/B testing in funnel optimisation: 1 versus multiple steps checkout measure against conversion rate</li>
+            </ul>
         </section>
 
         <section>
             <h4>MI Landscape (mouseover to zoom)</h4>
+            <p style="font-size: .5em">As of 2015, 2573 startups and companies developing machine intelligence software.</p>
             <div class="zoom-me" data-zoomed="img/ml-landscape.jpg">
                 <img src="img/ml-landscape-thumb.jpg" alt="Machine Intelligence Landscape" />
             </div>
         </section>
 
         <section>
-            Big but wide data too
-
-            Think about it, you can collect information about more customers, but you can also collect more information about one particular customer.
+            <h3>Wide data</h3>
+            <p>Data can be expanded in one of two ways:</p>
+            <ul>
+                <li>you can collect more of it; thinking tabularly increase the number of rows or</li>
+                <li>collect more information about existing entities; in terms of a table, increasing the number of columns</li>
+            </ul>
+            <p><i>Wide data is data with many columns.</i></p>
         </section>
 
         <section>
-            Separating the signal from the noise
+            <h4>Separating the signal from the noise</h4>
 
-            Steps:
-            feature extraction - what data to use in the model, working with incomplete data
-            regularization - how to weight data in the model
-            cross-validation - accuracy of the model
+            <ol>
+                <li>feature extraction - what data to use in the model, working with incomplete data, creating new features aggregating other (also including scores), etc.</li>
+            <li>regularization - how to weight data in the model</li>
+            <li>cross-validation - measuring accuracy of the model</li>
+            </ol>
 
-            https://hbr.org/2015/07/what-every-manager-should-know-about-machine-learning
+           <p>More information about this topic: <a href="https://hbr.org/2015/07/what-every-manager-should-know-about-machine-learning">What Every Manager Should Know About Machine Learning</a></p>
+        </section>
+
+        <!-- TODO: slide about feature extraction -->
+
+        <section>
+            <h3>Regularisation</h3>
+
+            <p>How to tell that our variables reflect signal, but not noise?</p>
+            <p>Should include penalty for complexity (prefer simple models as they are more general).</p>
+            <p>Good regularisation prevents over-fitting.</p>
+            <p>Popular regression method for variable selection and regularisation is <a href="https://en.wikipedia.org/wiki/Lasso_(statistics)">LASSO</a>.</p>
         </section>
 
         <section>
-            Feature extraction
-            which variables to use (data), but also building new features that aggregate important signals
+            <h3>Cross-validation</h3>
+
+            <p>How to verify that the model actually makes good predictions?</p>
+
+            <p>Partition set into training and validation sets, then train the model using training set, and use validation as unseen data.</p>
+
+            <p>10-fold cross-validation - divide data into 10 equally sized buckets; at each step train model using data from 9 buckets and verify using the remaining one, iterate 10 times, every time using different bucket for validation; measure validation score. Enables us to arrive at good confidence level with less data.</p>
         </section>
 
         <section>
-            Regularisation
+            <h3>Mistakes to avoid</h3>
 
-            How to tell that our variables reflect signal, but not noise?
-            regularisation - spit the difference between conservative and flexible model
-            penalty for complexity
-            prevents over-fitting
-            Many flavours of regularisation, but most popular one, is LASSO
+            <p>Confusing prediction and casual model - do two variables occur together and are influence by something else? Avoid variables that already indicate predicition result, e.g. session end timestamp in predicting how long typical user session lasts (we will not even have that data unless the session ends, so bad estimator).</p>
+
+            <p>Seeing causation where there is none. Well trained algorithm should make good predictions for environment it seen, so the more stable our environment the more valuable our predictions. However, if we move algorithm to new environment we may not get good predictions it is one of human biases - we try to find patterns and causation everywhere.</p>
         </section>
 
         <section>
-            Cross-validation
-
-            Once model is built how to make sure that it actually makes good predicitons?
-
-            Check if it is accurate out of sample for unseen data
-
-            10-fold validation
+            <h3>Machine Learning Toolbox</h3>
+            <p>Lots of software, but here we will concentrate on using <i>scikit-learn</i> and Apache Spark <i>MLLib</i>.
         </section>
 
-        <section>
-            Mistakes to avoid
+        <!-- TODO: Describe most popular machine learning algorithms
 
-            Confusing prediction and casual model
-
-            well trained algorithm should make good predictions for environment it seen
-            so the more stable our environment the more valuable our predictions
-            if we move algorithm to new environment we may not get good predictions
-            it is one of human biases - we try to find patterns and casuation everywhere
-            e.g. e-commerce data for kilt store, may not be so useful for brick-and-mortar store even if both sell similar product
-
-            https://hbr.org/2015/07/what-every-manager-should-know-about-machine-learning
-        </section>
-
-        <section>
-             Machine learning algorithms cheatsheet
-        </section>
-
-        <section>
-            <a href="http://scikit-learn.org/stable/tutorial/machine_learning_map/">Go to site (more info)</a>
-            <div class="zoom-me" data-zoomed="img/sci-kit-learn-choosing-algo.png">
-                <img src="img/sci-kit-learn-choosing-algo-thumb.png" alt="sci-kit learn - choosing algorithm cheatsheet">
-            </div>
-
-        </section>
-        
-        <section>
-            Most important algorithms and their applications
-
-            unsuprvised
+        unsuprvised
             suprvised
             and ?
 
             Decision-tree - finance, organisation decisions, loans, etc.
+
+        -->
+
+        <section>
+            <h3>Decision-trees</h3>
+            <p>One of the most popular machine learning forms and representations. Often used in operational reseach as it allows to quickly make decisions based on number of factors.</p>
+
+            <p>Great study of decision-trees: <a href="https://hbr.org/2015/11/how-machines-learn-and-you-win">How Machines Learn an You Win?</a></p>
         </section>
 
         <section>
-            decision-tree example cord-cutting
-
-            https://hbr.org/2015/11/how-machines-learn-and-you-win
-        </section>
-        
-        <section>
+            <h3>Statistics</h3>
+            Two important types of statistics:
             <ul>
+                <li>summary statistics - numbers such as mean, median, variance, etc. summarizing the whole population and</li>
+                <li>statistics in classical sense - hypothesis testing (e.g. if customers in London have 30% risk of churning compared to nation-wide 15% is our data right?), significance estimation, etc.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Machine Learning Resources</h3>
+            <ul>
+                <li><a href="http://www.amazon.co.uk/Machine-Learning-Probabilistic-Perspective-Computation/dp/0262018020/">Machine Learning: A Probabilistic Perspective by Kevin Murphy</a></li>
+                <li><a href="http://www.amazon.co.uk/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738/">Pattern Recognition and Machine Learning by Christopher Bishop</a></li>
+                <li><a href="http://www.amazon.co.uk/Information-Theory-Inference-Learning-Algorithms/dp/0521642981/">Information Theory, Inference, and Learning Algorithms by MacKay</a></li>
+            </ul>
+            <!-- TODO: more resources
                 math:
-                    coding a matrix
-                    python for data analysis
+                coding a matrix
+                python for data analysis
 
                 ml:
                 machine learning practical online book
-                <li><a href="http://www.amazon.co.uk/Machine-Learning-Probabilistic-Perspective-Computation/dp/0262018020/">Machine Learning: A Probabilistic Perspective by Kevin Murphy</a></li>
-                <li><a href="http://www.amazon.co.uk/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738/">Pattern Recognition and Machine Learning by Christopher Bishop</a></li>
-                information theory
-            </ul>
+            -->
         </section>
 
         <section>
