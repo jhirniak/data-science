@@ -683,6 +683,7 @@
                 <li><a href="http://www.amazon.co.uk/The-Presentation-Secrets-Steve-Jobs/dp/0071636080">The Presentation Secrets of Steve Jobs by Carmine Gallo</a></li>
                 <li><a href="http://www.amazon.co.uk/How-Win-Friends-Influence-People/dp/0091906814">How to Win Friends and Influence People by Dale Carnegie</a></li>
                 <li><a href="http://www.audible.co.uk/pd/Health-Personal-Development/Way-with-Words-Audiobook/B004F4HG0Y">Way with Words by Michael Drout</a></li>
+                <li><a href="http://www.amazon.co.uk/Freakonomics-Economist-Explores-Hidden-Everything/dp/0141019018/">Freakonomics by Stephen Dubner and Steven Levitt</a></li>
             </ul>
 
             <p class="fragment">Have other favourites? <a class="mm" href="mailto:nospam@thanks.com">Let me know!</a></p>
@@ -832,7 +833,7 @@
 
         <section>
             <h4>Raccoon to snow ratio</h4>
-            <img src="img/raccoon-to-snow.png" alt="Raccoon to snow ratio" />
+            <img class="stretch" src="img/raccoon-to-snow.png" alt="Raccoon to snow ratio" />
             <p class="fragment">I actually my starting using this one. It is hilarious :)!</p>
         </section>
 
@@ -871,74 +872,41 @@
             <p>Can you believe that it was published by World Bank?</p>
         </section>
 
+
         <section>
-            <h2>Principles of statistical data design</h2>
+            <h3>Ambiguity</h3>
+            <p>Like in a game of charades, everyone's perception of the same can be different. Hence, know your audience and do not make too easily assumptions. Different people can see different things in the same graph, depending on their background and data context.</p>
+            <p>Where is ambiguity make explicit what is meant by data for example using annotation.</p>
+            <p>However, never underestimate your audience. Often people are capable to induce much more than the author thought. Making everything too obvious make annotations redundant and data boring.</p>
         </section>
 
         <section>
-            <h3>Dimension principle</h3>
-            <i>
-                The number of information-carrying (variable) dimensions depicted should not exceed the number of dimensions in the data.
-            </i>
+            <h3>Ambiguity</h3>
+            <p>Ambiguity that would be fine in art, in statistical graphic needs to be specified.</p>
+            <img class="stretch" src="img/face-trees.jpg" />
         </section>
 
         <section>
-            <h3>Lie factor principle</h3>
-            $$ 0.95 < LF < 1.05 $$
-        </section>
-
-        <section>
-            <h3>Money principle</h3>
-            <i>
-                In time-series display of money, deflated and standarized units of monetary measurements are nearly always better than nominal units.
-            </i>
-        </section>
-
-        <section>
-            <h3>Data-ink principle</h3>
-        </section>
-
-        <section>
-            <h3>Context principle</h3>
-            <i>Graphics must not quote data out of context.</i>
-        </section>
-
-        <section>
-            <h3>No information, what do you even make graph for?</h3>
-            <img src="img/worthless-data-worthless-graph.png" alt="R = 0" />
-        </section>
-
-        <section>
-            Ambiguity, people can see different things in your data.
-
-            If something is non-cannonical it requires different representation or labelling aid.
-
-            Different people have different perceptions of data
-            perceived area of circle
-            diff context => different interpretations
-            make it clear using labels, do not leave anything ambigious
-        </section>
-
-        <section>
-            <h3>Reduce data understanding burden</h3>
-            <p>How many times do you need to travel between legend and regions in the following and still not to understand a thing</p>
-            <img src="img/label-hell.jpg" />
-        </section>
-
-        <section>
-            <img src="img/label-hell.png" />
-        </section>
-
-        <section>
-            <h3>Interesting data made unreadable</h3>
-            How to find who your occupation maries (pay attention to gender).
-            How to find occupations ... etc.
-            <a href="http://www.bloomberg.com/graphics/2016-who-marries-whom/"></a>
-        </section>
-
-        <section>
-            What the number mean?
+            <h3>Ambiguity</h3>
+            <p>So, how important is it?</p>
             <img src="img/foreplay.png" alt="Importance of fore-what?" />
+        </section>
+
+        <section>
+            <h3>Chart clutter</h3>
+            <div class="stretch">
+                <div class="content" style="max-width: 50%">
+                    <p>Graphical data needs to be presented in a way as a good prose is written. The reader should not need to consult legend often and untangle complicated annotations.</p>
+                </div>
+                <div class="margin" style="max-width: 50%">
+                    <img style="max-height:500px" src="img/label-hell.jpg" />
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Chart clutter</h3>
+            <img src="img/label-hell.png" />
         </section>
 
         <section>
@@ -947,6 +915,12 @@
                 <li>The representation of numbers, as physically measured on the surface of the graphic intself, should be directly proprotional to the numerical quantities represented.</li>
                 <li>Clear, detailed, and thorough labeling should be used to defeat graphical distortion and ambiguity. Write out explanations of the data on the graphic itself. Label important events in the data.</li>
                 <li>Show data variation, not design variation.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Six principles of data integrity</h3>
+            <ol start="4">
                 <li>In time-series displays of money, deflated and standarized units of monetary measurement are nearly always better than nominal units.</li>
                 <li>The numbe of information-carrying (variable) dimenions depicted should not exceed the number of dimensions in the data.</li>
                 <li>Graphics must not quote data out of context.</li>
@@ -982,48 +956,125 @@
 
         <section>
             <h3>Data-Ink</h3>
-            Use ink as effectively as possible.
-            Data graphics should draw the viewer's attention to the sense and substance of the data, not to something else.
-            Esentially, statistical graphics should help people reason about quantitiative information.
+            <p>Data-ink is ink used to represent data.</p>
+            <p>Non data-ink is ink that we can erase without lossing information in our graph (e.g. removing grid, or axis tickers).</p>
+            <p><i>Use ink as effectively as possible. But, without reasonable limits.</i></p>
+            <p>Data graphics should draw the viewer's attention to the sense and substance of the data, not to something else.</p>
             <i>Above all else show the data.</i>
         </section>
 
         <section>
-            A large share of ink on a graphic should present data-information, the ink chaning as the data change. <i>Data-ink</i> is the non-erasable core of a graphic, the non-redundant ink arrange in response to variation in the numbers represented.
+            <h3>Data-Ink</h3>
+            <p><i>Data-ink</i> is the non-erasable core of a graphic, the non-redundant ink arrange in response to variation in the numbers represented.</p>
 
-            Data-ink ratio = data-ink / total ink used to print the graphic
-            = proprition of graphic's ink devoted to non-redundant display of data-information
-            = 1.0 - proprotion of a graphic that can be erased without loss of data-information.
+            $$
+            \begin{equation}
+            \begin{split}
+            \mbox{Data-ink ratio} &= \frac{\mbox{data-ink}}{\mbox{total ink used to print the graphic}} \\
+            &= \mbox{proportion of graphic's ink devoted to} \\
+            & \mbox{non-redundant display of data-information} \\
+            &= 1.0 - \mbox{proportion of a graphic that can be} \\
+            & \mbox{erased without loss of data-information}
+            \end{split}
+            \end{equation}
+            $$
         </section>
 
         <section>
-            Good example, very high data-ink ratio:
-            <img src="img/electroencephalograph.jpg" alt="Electroencephalograph showing stages of sleep in very efficient data-ink way" />
+            <p>Good example, very high $ \mbox{data-ink ratio} $</p>
+            <img class="stretch" src="img/electroencephalograph.jpg" alt="Electroencephalograph showing stages of sleep in very efficient data-ink way" />
         </section>
 
         <section>
             <h3>Grid clutter</h3>
-            Grids have no place in graphs. Only exception when one need to follow data, but then it needs to be less visible than data. Can be replaced with labels, etc.
+            <p>Grids have no place in graphs, except when aiding in reading data, but then must be less visible than data. Initially invented to aid in drawing. Most often, can be replaced with labels or simply removed.</p>
             <img class="stretch" src="img/grid.png" alt="Grid Clutter"/>
         </section>
 
         <section>
-            <h3>Some ink saving can be found where you do not expect them</h3>
-            Example, symmetry. When analyzing faces, wazes, etc., people examine only one side and if other is symmetric then once they quickly find it they stop analysing it. So, we can save half-the-ink by dividing along the symmetry. Also if we have asymetry then we can easily indicate it by displaying the whole.
-            <a href="https://en.wikipedia.org/wiki/Chernoff_face">Chernoff faces</a>
+            <h4>Some ink saving can be found where you do not expect it</h4>
+            <p>Example, symmetry. When analyzing faces, wases, and other naturally symmetrical objects, people examine only one side and if other is symmetric then once quickly established they stop analysing of the other half.</p>
+            <p>Hence, we can save half-the-ink by dividing along the symmetry. At the same time, if there is asymmetry giving clear message of that by drawing both halves.</p>
         </section>
 
         <section>
-            <h3>Sometimes good also to add data</h3>
-            To not force people to connect right and left edge (e.g. maps).
-            Here, we use redundancy to lessen the cognitive burden.
+            <h3>Data duplication in good faith</h3>
+            <p>Sometimes it makes sense to duplicate data to reduce cognitive burden. For example, in some maps it is good to duplicate part of map on both edges allowing to read it without jumping between the two opposite sides.</p>
+            <p>Hence, even we increase non-data ink, we improve data readability.</p>
         </section>
 
         <section>
-            Duck clutter
-            <img src="img/can-clutter.gif" alt="Unnecessary can-duck in cans wasted since 1972" />
+            <h3>The Duck</h3>
+            <img class="stretch" src="img/big-duck.jpg" />
+            <blockquote style="font-size:.55em; width: 100%">When a graphic is taken over by decorative forms or computer debris, when the data measures and structures become Design Elements, when the overall design purveys Graphical Style rather than quantitative information, then that graphic may be called a duck in honor of the duck-form store, "Big Duck".</blockquote>
         </section>
 
+        <section>
+            <h3>The Duck</h3>
+            <img class="stretch" src="img/can-clutter.gif" alt="Unnecessary can-duck in cans wasted since 1972" />
+            <p>Use of cans do not bring any information, but make reading axis impossible.</p>
+        </section>
+
+        <section>
+            <h3>The Duck's Attendance Matters!</h3>
+            <img class="stretch" src="img/attendance-matters.png" />
+        </section>
+
+        <section>
+            <h3>The Duck and Super Computers</h3>
+            <div class="content">
+                <img src="img/top-500-supercomputers.png" />
+            </div>
+            <div class="margin">
+            <p>Completely unreadable, but notice how the use of patterns (as if the colours wouldn't be enough) make it even less readable.</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>More Super Dumputers</h3>
+            <img src="img/wasted-ink-on-super-computers.png" />
+        </section>
+
+        <section>
+            <p>Not only pie chart doesn't introduce any data, it only brings cognitive burden. But, there is practically table in the legend, why just not to present the table and sort it in descending order?</p>
+            <img class="stretch" src="img/wasted-ink-on-reading.png" />
+        </section>
+
+        <section>
+            <h2>Principles of statistical data design</h2>
+        </section>
+
+        <section>
+            <h3>Dimension principle</h3>
+            <i>
+                The number of information-carrying (variable) dimensions depicted should not exceed the number of dimensions in the data.
+            </i>
+        </section>
+
+        <section>
+            <h3>Lie factor principle</h3>
+            $$ 0.95 < LF < 1.05 $$
+        </section>
+
+        <section>
+            <h3>Data-ink ratio</h3>
+            $$ DI \rightarrow 1 $$
+            <p><i>But within reasonable bounds.</i></p>
+        </section>
+
+        <section>
+            <h3>Money principle</h3>
+            <i>
+                In time-series display of money, deflated and standarized units of monetary measurements are nearly always better than nominal units.
+            </i>
+        </section>
+
+        <section>
+            <h3>Context principle</h3>
+            <i>Graphics must not quote data out of context.</i>
+        </section>
+
+        <!-- TODO
         <section>
             <h3>Statistical Illustrator Toolbox</h3>
             <ul>
@@ -1033,19 +1084,27 @@
                 <li>relation graphics</li>
             </ul>
         </section>
+        -->
+
+        <section>
+            <h2>Beautiful data maps</h2>
+        </section>
 
         <section>
             <h3>Data Maps</h3>
-            <div class="zoom-me" data-zoomed="img/cholera-outbreak-map.jpg">
-            <img style="height:480px;" src="img/cholera-outbreak-map.jpg" alt="John Snow Cholera Outbreak Map"/>
-                </div>
+            <div class="content">
+                <div class="zoom-me" data-zoomed="img/cholera-outbreak-map.jpg">
+                <img style="height:480px;" src="img/cholera-outbreak-map.jpg" alt="John Snow Cholera Outbreak Map"/></div>
+            </div>
+            <div class="margin">
+                <p>John Snow's map, on the left, lead to removal of water pump handle that was the source of spreading Cholera, in the result saving hundreds of lives.</p>
+                <p>Think how more daunting task would it be to arrive at the same conclusion using tabular data.</p>
+            </div>
         </section>
 
         <section>
             <h2>Data Maps</h2>
             The maps repay careful study. Notice how quickly and naturally our attention has been directed toward exploring the substantive content of the data rather than toward questions of methodology and technique.
-
-            John Snow's map lead to removal of water pump handle that was spreading Cholera and in the result saving hundreds of lives.
         </section>
 
         <section>
@@ -1075,8 +1134,8 @@
 
         <section>
             <h4>Pie chart explaining why pie charts are useless</h4>
-            <img src="img/pyramid-pie.png" />
-            <p>You have to give it - both entertaining and making a point.</p>
+            <img class="stretch" src="img/pyramid-pie.png" />
+            <p>Abandon pie charts, they do not bring any information, but only confusion as the area and sections bring cognitive bias.</p>
         </section>
 
         <section>
@@ -1093,22 +1152,19 @@
         </section>
 
         <section>
-            <a href="http://blogs.wsj.com/economics/2016/03/02/what-percent-are-you-2/">
+            <h3>Examples of Data Journalism</h3>
+            <ol>
+                <li><a href="http://blogs.wsj.com/economics/2016/03/02/what-percent-are-you-2/">
                 What Percent Are You?
-            </a>
-            <a href="http://graphics.wsj.com/infectious-diseases-and-vaccines/">
-                Battling Infectious Diseases in the 20th Century: The Impact of Vaccines</a>
-            <a href="http://www.kicksusa.com/basketball-shoes-sales-data/">Dunking for Dollars - How Player Performance Impacts Shoe Sales</a>
-            <a href="http://www.npr.org/sections/money/2014/08/27/343415569/whos-in-the-office-the-american-workday-in-one-graph">
-                Who's In The Office? The American Workday In One Graph</a>
+            </a></li>
+            <li><a href="http://graphics.wsj.com/infectious-diseases-and-vaccines/">
+                Battling Infectious Diseases in the 20th Century: The Impact of Vaccines</a></li>
+            <li><a href="http://www.kicksusa.com/basketball-shoes-sales-data/">Dunking for Dollars - How Player Performance Impacts Shoe Sales</a></li>
+            <li><a href="http://www.npr.org/sections/money/2014/08/27/343415569/whos-in-the-office-the-american-workday-in-one-graph">Who's In The Office? The American Workday In One Graph</a></a></li>
+            </ol>
         </section>
 
-        <section>
-            Reading
-            guts
-            frekonomics
-            estimating ... book from IT
-        </section>
+        <!-- RET -->
 
         <section>
             <div class="ds-box">
