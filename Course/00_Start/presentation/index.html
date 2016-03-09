@@ -1564,61 +1564,25 @@
             <p>Conveniently, the parameters can also be stored in an environment variable <i>PYSPARK_SUBMIT_ARGS</i>.</p>
         </section>
 
+        <!-- TODO: Spark libraries in more detail -->
+
         <section>
             <h3>Databases</h3>
-            Data integration
-            Good for small evaluation
-            Often need to bring together for offline analysis
-            Data warehouses
-            Small investigations
-            Neo4j
+            <p>Do not fall into a trap of underestimating databases. They are gems that were polished for many years.</p>
+            <p>Even if you will not use database for data science, most likely, all data that you will need to integrate will come from databases. Sometimes data from as many as hundreds of databases with multitude of tables needs to be integrated before any analysis can be done.</p>
+            <p>Databases are also good for data exploration, so it is good to know at least basics of most popular querying languages, e.g. one SQL dialect (relational), MongoDB (document-based), and Cypher (graph).</p>
+            <p>... and with NoSQL revolution many databases are horizontally scalable such as Hadoop and Spark.</p>
         </section>
 
         <section>
-            <h3>Spark takeover over Hadoop</h3>
-            Spark (Spark takes over hadoop)
+            <h3>Our set-up</h3>
+            <p><i>We will concentrate on using Anaconda libraries and PySpark code via Jupyter Notebooks.</i></p>
         </section>
 
         <section>
-            <h3>Spark Ecosystem</h3>
-        </section>
+            <p class="fragment semi-fade-out" data-fragment-index="1">OK, so we discussed what does it take to be a data scientist and what tools they use, but what exactly they work on and where?</p>
 
-        <section>
-            In this course, we will use
-            <ul>
-                <li>Anaconda that encompases ...</li>
-                <li>Apache Spark</li>
-                <li>Neo4j</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Setting up</h3>
-            Install Anaconda
-            (install in anaconda: scikit-learn, numpy?)
-            Anaconda
-            Apache Spark
-
-            Juypter notebook (no longer profiles)
-            findspark
-
-            import findspark
-            findspark.init()
-
-            import pyspark
-        </section>
-
-        <section>
-            Pipeline
-        </section>
-
-        <section>
-            Running the environment
-            ...
-        </section>
-
-        <section>
-            <h2>Where data scientists work?</h2>
+            <h2 class="fragment reveal" data-fragment-index="2">Where data scientists work?</h2>
         </section>
 
         <section>
@@ -1635,37 +1599,46 @@
         </section>
 
         <section>
-            <h3>Where DS work? It may surprise you.</h3>
-            You may be surprised where data science innovation awaits - big companies rather than start-ups
-            The reasons are that big companies often sit on a big pile of data, while start-ups do not have resources to
-            spend on that.
+            <h3>Where Data Scientists work? The answer may surprise you.</h3>
+            <p>Big companies have the most of data, so the most opportunities await there rather than in start-ups. Usually, start-ups do not have access to enough data to hire data scientists, beside those ones that develop new tools and own the data solutions (e.g. Palantir).</p>
+            <p class="fragment reveal"><i>Big companies sit on a big pile of gold (data) that awaits to be dug up.</i></p>
         </section>
 
         <section>
             <h3>Where data scientists work?</h3>
             <ul>
-                <li>Recommendation: Google, Amazon, Spotify, </li>
-                <li>Banks: Chase, ...</li>
-                <li>Stock</li>
-                <li>governments</li>
-                <li>energy sector</li>
-                <li>big scale</li>
+                <li>Retailers: Google (AdWords), Amazon (who bought this bought also this), Spotify (you may like also those songs), Target (<a href="http://www.businessinsider.com/the-incredible-story-of-how-target-exposed-a-teen-girls-pregnancy-2012-2?IR=T">we know about your pregnancy before you father</a>), stocking up depending on weather, cataclysms, events, holidays, trends, personalized services, special offers, preventing churning and cord-cutting, etc.</li>
+                <li>Government agencies: NSA, CIA, and others predict and detect fraud, death, and even terrorism (actually it is <a href="http://www.forbes.com/sites/andygreenberg/2013/08/14/agent-of-intelligence-how-a-deviant-philosopher-built-palantir-a-cia-funded-data-mining-juggernaut/#cd9833b3da82">how Palantir came to be</a>), detecting human traficking, mananging disaster evacuations, etc.</li>
+                <li>Banks: Chase Bank predicts credit default and prepayments to give better rates and attract more customers, Capital One made a fortune on such predictions, and every other bank, does similar things</li>
             </ul>
         </section>
 
         <section>
             <h3>Where data scientists work?</h3>
-            In fact, data science is becoming so important that it is starting hard to get C-suite job without it.
+            <li>Link prediction: Facebook knows who you are good friends with better than you and LinkedIn predicts when you are about to change a job</li>
+            <li>Energy sector: gauging consumption pattern (e.g. UK dreaded <a href="https://en.wikipedia.org/wiki/TV_pickup">TV pickup</a> for a cup of tea), preventing accidents (nowadays there are so many sensors that many accidents such as Deepwater Horizon, Exxon Valdez or Fukushima  can be predicted and prevented), ordering spare parts before they need replacement, weather-related factor accounting for renewable energy (e.g. wind, solar, tidal), etc. Read more at <a href="http://www.mastersindatascience.org/industry/energy/">Data Science in Energy</a>.</li>
+            <li>Biotechnoloy: personalised medicine, predicting outbreaks, etc.</li>
+        </section>
+
+        <section>
+            <h3>Where data scientists work?</h3>
+            <li>Finance: sentiment analysis - analysing news, information to predict the events, stock movements, etc., automated credit risk assessment, fighting financial fraud, providing more accurate pricings, predicting stock movements, commodities values in connected markets, etc., etc.</li>
+            <li>Gaming - preventing cheating, bad behaviour, optimising DAU, MAU, etc.</li>
+
+            <p>If you are interested where data scientists work and what they do you will find <a href="http://www.amazon.co.uk/Predictive-Analytics-Power-Predict-Click/dp/1119145678/">Predictive Analytics: The Power to Predict Who Will Click, Buy, Lie, or Die by Eric Siegel and Thomas H. Davenport</a> very interesting. It covers data science case studies for multitude companies.</p>
+            <p>Very good coverage of real world applications of data science is discussed at and <a href="http://www.mastersindatascience.org/industry/">Data Science in the Real World</a></p>
+        </section>
+
+        <section>
+            <h3>Where data scientists work?</h3>
+            <p><i>Data science is becoming so important part of decision making process that it is starting hard to get C-suite job without at least basic undestanding of data science.</i></p>
             <!-- TODO: source -->
         </section>
 
         <section>
             <h3>How much data scientist make?</h3>
             <blockquote class="expanded">
-                Seventy-one percent of the sample consists of individual contributors. Their median base salary is
-                $120,000, and 71% are eligible for a bonus. The median bonus received is $15,650. The other 29%
-                of the sample are managers. Their median base salary is $170,000, and 82% are eligible for a
-                bonus. The median bonus received is $36,000.
+                Seventy-one percent of the sample consists of individual contributors. Their median base salary is $\$ 120,000 $, and 71% are eligible for a bonus. The median bonus received is $ \$15,650$. The other 29% of the sample are managers. Their median base salary is $ \$170,000 $, and 82% are eligible for a bonus. The median bonus received is $ \$36,000 $.
             </blockquote>
             <div class="source">
                 <a href="http://www.burtchworks.com/files/2014/07/Burtch-Works-Study_DS-2015_final.pdf">Study performed on 371 data scientists in the US by Burtch Works.</a>
@@ -1677,18 +1650,20 @@
             <ul>
                 <li>Plan your career carefully. Evaluate how can you learn, grow skill set, and position yourself to achieve long-term goals.</li>
                 <li>Consider the level of support data science has organization-wide. Your success will depend on ability to present your findings and solutions to leadership.</li>
-                <li>Make sure the organization (or team) has the funding and patience to see the fruits of
-                    your labor – it won’t happen overnight.</li>
-                <li>Be realistic about start-ups. Very few startups become profitable, let alone reach the
-                    success of Facebook or Uber, and most fail within a few years.</li>
-                <li>Build your business knowledge. . The number one complaint we hear from companies about
-                    data scientists is that they lack business knowledge and skills. Your analysis must be relevant to company business goals.</li>
-                <li>Develop your communication skills. Presenting findings to a non-technical audience (such
-                    as the marketing team or the C-Suite) is a crucial part of being a data scientist. Presenting your findings can be very challenging,
-                    so develop your storytelling skills.</li>
+                <li>Make sure the organization (or team) has the funding and patience to see the fruits of your labor – it won’t happen overnight.</li>
+                <li>Be realistic about start-ups. Very few startups become profitable, let alone reach the success of Facebook or Uber, and most fail within a few years.</li>
             </ul>
         </section>
 
+        <section>
+            <h3>Advice for Data Scientists by Burtch Works</h3>
+            <ul>
+                <li>Build your business knowledge. . The number one complaint we hear from companies about data scientists is that they lack business knowledge and skills. Your analysis must be relevant to company business goals.</li>
+                <li>Develop your communication skills. Presenting findings to a non-technical audience (such as the marketing team or the C-Suite) is a crucial part of being a data scientist. Presenting your findings can be very challenging, so develop your storytelling skills.</li>
+            </ul>
+        </section>
+
+        <!-- TODO
         <section>
             <h3>Who is hiring?</h3>
             http://careers.goodeggs.com/
@@ -1701,29 +1676,32 @@
 
             how big impact open data can have (e.g. parking spot)
         </section>
+        -->
 
         <section>
-            <h3>Data Science Applications</h3>
-            Technology              40%
-            Marketing Services      14%
-            Financial Services      12%
-            Retail                  7%
-            Corporate-Other         7%
-            Consulting              7%
-            Gaming                  6%
-            Healthcare/Pharma       4%
-            Government              3%
+            <h3>Market share per area</h3>
+            <table>
+            <tr><td>Technology</td><td>40%</td></tr>
+            <tr><td>Marketing Services</td><td>14%</td></tr>
+            <tr><td>Financial Services</td><td>12%</td></tr>
+            <tr><td>Retail</td><td>7%</td></tr>
+            <tr><td>Corporate-Other</td><td>7%</td></tr>
+            <tr><td>Consulting</td><td>7%</td></tr>
+            <tr><td>Gaming</td><td>6%</td></tr>
+            <tr><td>Healthcare/Pharma</td><td>4%</td></tr>
+            <tr><td>Government</td><td>3%</td></tr>
+            </table>
         </section>
 
         <section>
-            Data Science Team
-            Working with other teams: marketing, data products, operations, business decisions, product
+            <h3>Collaboration</h3>
+            <p>To engineer successful data sience product data scientist often work in close collaboration with other teams such as marketing, data products, operations, business decisions, product.</p>
         </section>
 
         <!-- TECHNICAL -->
 
         <section>
-            <h2>Data Science Pipeline</h2>
+            <h2>Data Science Process</h2>
         </section>
 
         <section>
@@ -1840,7 +1818,8 @@
             how to choose most important one?
             OLAP - Online Analytical Processing
             OLTP - Online Transaction Processing
-            <img style="width: 100%;" src="http://datawarehouse4u.info/images/olap_vs_oltp.jpg" />
+            <br />
+            <img class="stretch" src="http://datawarehouse4u.info/images/olap_vs_oltp.jpg" />
         </section>
 
         <section>
