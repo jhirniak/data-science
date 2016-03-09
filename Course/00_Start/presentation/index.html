@@ -178,11 +178,12 @@
 
         <section>
             <h3>How much really is it?</h3>
-            <p>Google processes 20 PB a day (2008).</p>
-            <p>Tolkien's The Lord of the Rings trilogy has 788 pages (311 + 258 + 219) totalling to 2.5 MB of raw text.</p>
-            <p>20 PB / 2.5 MB = 2^50 / 2^20 = 2^30 &#8776; 10^9</p>
+            <p>Google processes $ 20 $ PB a day (2008).</p>
+            <p>Tolkien's The Lord of the Rings trilogy has $ 788 $ pages ($ 311 + 258 + 219 $) totalling to $ 2.5 $ MB of raw text.</p>
+            $$ \frac{20 PB}{2.5 MB} = \frac{2^{50}}{2^{20}} = 2^{30} \approx 10^9 $$
             <p><i>Google analyses an equivalent of 1 billion of LoTR trilogies every day!</i></p>
             <p>It is not just collection, this data is processed.</p>
+            <p>I wish I could read so many books a day!</p>
         </section>
 
         <section>
@@ -840,7 +841,7 @@
         <section>
             <h4>Raccoon to snow ratio</h4>
             <img class="stretch" src="img/raccoon-to-snow.png" alt="Raccoon to snow ratio" />
-            <p class="fragment">I actually my starting using this one. It is hilarious :)!</p>
+            <p class="fragment">I actually might starting using this one. It is hilarious :)!</p>
         </section>
 
         <section>
@@ -900,7 +901,7 @@
 
         <section>
             <h3>Chart clutter</h3>
-            <div class="stretch">
+            <div>
                 <div class="content" style="max-width: 50%">
                     <p>Graphical data needs to be presented in a way as a good prose is written. The reader should not need to consult legend often and untangle complicated annotations.</p>
                 </div>
@@ -1018,7 +1019,7 @@
         <section>
             <h3>The Duck</h3>
             <img class="stretch" src="img/can-clutter.gif" alt="Unnecessary can-duck in cans wasted since 1972" />
-            <p>Use of cans do not bring any information, but make reading axis impossible.</p>
+            <p>Use of cans does not bring any information to the picture, but make reading axis impossible.</p>
         </section>
 
         <section>
@@ -1399,13 +1400,6 @@
                 <p>Data Scientist</p>
             </div>
         </section>
-
-        <section>
-            <h2>Software Engineering</h2>
-            basics ...
-            just a heck of for platform ... list ...
-        </section>
-
         <section>
             <h4>Big Data Landscape (mouseover to zoom)</h4>
             <div class="zoom-me" data-zoomed="img/bd-landscape.png">
@@ -1414,72 +1408,160 @@
         </section>
 
         <section>
-            Open vs close source
-            Advantages - fast to move, free data
+            <h3>Types of data science tools</h3>
+            <p>Data science tools naturally divide into two categories among several dimensions, such as open and close source, or visual and coded.</p>
+            <p>Most often, visual and closed source tools have advantage when it comes to non-technical users, e.g. Tableau. However, there are platform solutions such as Google's BigQuery (e.g. used by Spotify to make songs recommendations and match adverbs for free users) and complete solutions (from infastructure up to dashboard).</p>
+            <p>However, the problem with the closed source is a glass ceiling. What it does it does very well, but once you want to do something out of intended use you often are out of luck. This sometimes can poses serious limitation.</p>
         </section>
 
         <section>
-            Visual vs coding
+            <h3>Types of data science tools</h3>
+            <p>However, open source and programming heavy tools will give you the power you need. There is going to be initial inertia with setting up the environment (infrastructure, platform, visualisations, etc.), but once done, a lot of parts are going to be reusable.</p>
+            <p>Imporatntly, this set-up allows for ownership of the solution and even automated data-driven decision making, e.g. once you model link prediction you can develop optimised model and deploy it to suggest friends on YourBook.com.</p>
         </section>
 
         <section>
-            State of the art
-            Open source - Apache Spark, Hadoop ecosystem, ...
-            Python tools
+            <h3>Types of data science tools</h3>
+            <p>Open source tools were long time developed by many cutting-edge companies such as Google, Yahoo, Continuum, and big open source community that they easily match advanced closed source software capabilities and often exceed them giving the incredible flexibility and documentation.</p>
         </section>
 
         <section>
-            <h3>What tools data scientists use?</h3>
-            Essentials: Python, R, and SQL
-            At scale: Hadoop, Hive, M/R
-            Alternatives: Julia, MongoDB, Java
-            Data visualisation: D3, R/Shiny
+            <h4>What tools data scientists use?</h4>
+            <ul>
+                <li>Core: Python, R, and SQL</li>
+                <li>Distributed OS: Yarn, Mesos</li>
+                <li>Cluster computing: Hadoop, Spark</li>
+                <li>Algorithms: scikit-learn, NumPy, SciPy, MLLib, GraphX, NetworkX, ...</li>
+                <li>Data warehousing: Hive, Pig</li>
+                <li>Data visualisation: d3.js, matplotplib, ggplot, R/Shiny</li>
+                <li>Composition: Jupyter Notebook</li>
+                <li>... and many more</li>
+            </ul>
         </section>
 
         <section>
-            <h3>How does those tools fit together?</h3>
-            (Website|Website data|Customer support data|Event tracking data)
-            -> SQL database
-            -> R or Python
-            -> (Predictive models|Dashboards and reports|Analysis)
+            <h3>Lingua Franca</h3>
+            <p>Python and R are most commonly used programming languages for data scientific programming. Both have their pros and cons, but recently, thanks to years of scientific community contribution and plugins into other frameworks, Python emerged as both dominant and glue language of data science, while R and SAS are becoming less popular at scale.</p>
+            <p>R still very useful, but only Python gives you ability to build everything from platform, via optimised code, up to dashboards in one language.</p>
         </section>
+
+        <!-- TOOD: DATA WAREHOUSING -->
 
         <section>
             <h3>Software stack</h3>
             <ul>
                 <li>Python - a glue language</li>
-                <li>Pandas, Numpy, SciPy, sci-kit, NetworkX, etc.</li>
-                <li>Apache Spark + MLLib + GraphX</li>
-                <li>IPython + Jupyter Notebooks</li>
-                <li>CPython, Multiprocessing</li>
-                <li>Anaconda</li>
+                <li>Continuum Anaconda containing <a href="https://docs.continuum.io/anaconda/pkg-docs">$ > 400 $ of the most popular Python packages</a> for science, math, engineering, and data analysis, including Pandas, NumPy, and scikit-learn amongst many others</li>
+                <li>IPython and Jupyter Notebooks</li>
+                <li>Apache Hadoop (here we will use Hadoop 2.6)</li>
+                <li>Apache Spark and its libraries such as MLLib and GraphX</li>
+                <li>Cython compiler and Multiprocessing Python's library for optimisation and harnessing cores</li>
+                <li>Databases such as Neo4j (graph database)</li>
             </ul>
-
-            Not used, but handful Cython (timing example)
         </section>
 
         <section>
-            <h3>IDEs</h3>
-            PyCharm
-            Scypron (graphical IPython)
+            <h3>Writing Python</h3>
+            <p>You can use many different tools for writing Python, but my personal favourites are</p>
+            <ul>
+                <li>IDE: PyCharm by JetBrains (<a href="https://www.jetbrains.com/student/">free student licenses available</a>)</li>
+                <li>Exploratory work and documentation: Jupyter Notebook</li>
+                <li>Console: IPython Qt Console</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>PyCharm</h3>
+            <img class="stretch" src="img/pycharm.png" />
+        </section>
+
+        <section>
+            <h3>Jupyter Notebook</h3>
+            <img class="stretch" src="img/jupyter.png" />
+        </section>
+
+        <section>
+            <h4>IPyton Qt Console</h4>
+            <img class="stretch" src="img/qtconsole.png" alt="IPython Qt Console" />
         </section>
 
         <section>
             <h3>Python - a glue language</h3>
-            Python is a great language to work with data because mathematical formulas and algorithms can be developed
-            almost at literal translation and pseudo-code levels. But, in the same time we have access to wast number of
-            libraries and frameworks allowing us to concentrate on the problem at hand.
+            <p>Python is a great language to work with data because mathematical formulas and algorithms can be developed almost at literal translation and pseudo-code levels. But, at the same time we have access to enormous amount of libraries and frameworks allowing us to concentrate on the problem at hand.</p>
+            <p>Further to that, Python is fully portable, have bindings to many other popular frameworks and libraries (e.g. PySpark binding to Apache Spark), and can be very efficient (plain Python $ \rightarrow $ NumPy $ \rightarrow $ Cython / PyPy, ...) .</p>
+        </section>
+
+        <section>
+            <h3>Continuum Analytics</h3>
+            <ul>
+                <li><a href="https://www.continuum.io/anaconda">Anaconda</a> is the fastest growing open data science platform with <a href="https://docs.continuum.io/anaconda/pkg-docs">$ > 400 $ of the most popular Python packages</a> for science, math, engineering, and data analysis, including Pandas, NumPy, and scikit-learn amongst many others. There is also even more powerful version of Anaconda for enterprise.</li>
+                <li><a href="http://conda.pydata.org/miniconda.html">Miniconda</a> - lightweight version of Anaconda.</li>
+                <li><a href="http://conda.pydata.org/docs/">Conda</a> - package and environment management system.</li>
+            </ul>
+            <p>To get started, download and install Anaconda from <a href="https://www.continuum.io/downloads">here</a>. I strongly recommend Python 3.x version as it is where the world is heading now.</p>
         </section>
 
         <section>
             <h3>Jupyter Notebooks</h3>
-            IPython
-            --pylab
-            --ide
+            <ul>
+                <li>Comes together with Anaconda, to run simply type
+                    <img src="img/cmd-jupyter-notebook.png" />
+                    into the Anaconda console, being located in a folder where you want to store your notebooks.</li>
+                <li>Up to IPython 3.X those were called IPython Notebooks and were monolithic part of IPython, but from IPython 4.0 language agnostic modules were separated from IPython, one of which became project <a href="http://jupyter.org/">Jupyter</a>. You can read about <a href="http://blog.jupyter.org/2015/04/15/the-big-split/">the big split here</a>.</li>
+            </ul>
         </section>
 
         <section>
-            <h3>Python IDEs</h3>
+            <h3>The Big Split and Jupyter</h3>
+            <p>Because of the big split, you will often find confusing information as some things changed significantly in the language agnostic projects compared to their counterparts in IPython 3.X, but also the knowledge is Googlable under IPython and new module name. It introduces some degree of chaos and it is good to be aware of that.</p>
+            <p>Example of such change is integration of Jupyter Notebook with PySpark which because of absence of profiles in Jupyter compared to IPython must be implemented differently. But, overwelming amount of information relates profile-based solution.</p>
+        </section>
+
+        <section>
+            <h3>Jupyter and PySpark</h3>
+
+            <p>Since, profile solution is unavailable in Jupyter, now the best approach to use PySpark with Python notebooks is to install <i>findspark</i> module via <i>conda</i> and use it to get to Spark Context.</p>
+
+            <pre><code class="python">
+    import findspark
+    findspark.init()
+
+    import pyspark
+    sc = pyspark.SparkContext()
+            </code></pre>
+
+            <p>To install findspark, simply type <i>conda install findspark</i> into the Anaconda console.</p>
+        </section>
+
+        <section>
+            <h3>Apache Hadoop</h3>
+            <p>Apache Hadoop is an open-source software framework written in Java for distributed storage and distributed processing of very large data sets on computer clusters built from commodity hardware. All the modules in Hadoop are designed with a fundamental assumption that hardware failures are common and should be automatically handled by the framework.</p>
+            <p>Based on <a href="http://research.google.com/archive/mapreduce.html">Map/Reduce paper</a> published by Google 10 years ahead of Hadoop development.</p>
+            <p>Hadoop is not only Map/Reduce, but a big ecosystem with Hadoop core being: Hadoop Commons, Hadoop Distributed File System (HDFS), Hadoop YARN (resource management), and finally Hadoop MapReduce itself.</p>
+        </section>
+
+        <section>
+            <h3>Hadoop Ecosystem</h3>
+            <img class="stretch plain" src="img/hadoop-ecosystem.png" />
+        </section>
+
+        <section>
+            <h3>Apache Spark</h3>
+            <p>Apache Spark is a fast and general engine for big data processing, with built-in modules for streaming, SQL, machine learning, and graph processing. It is written in Scala.</p>
+            <p>The greatest difference from Hadoop is the ability to run iterative algorithms efficiently and manage caching and distribution of data. As most machine learning algorithms work like this Apache Spark opened many data science applications.</p>
+            <p>Worth to note, that although we can write code in Python, but PySpark is only translating Python code to Scala, making it slower. <i>If you want to write optimised Spark code and use the latest features then you should write it in Scala.</i></p>
+        </section>
+
+        <section>
+            <h3>Local Spark Instance</h3>
+
+            <p>To launch Apache Spark locally add the following parameters to PySpark:</p>
+
+            <pre><code class="bash">
+                --master local[2] pyspark-shell
+            </code></pre>
+
+            <p>Conveniently, the parameters can also be stored in an environment variable <i>PYSPARK_SUBMIT_ARGS</i>.</p>
         </section>
 
         <section>
@@ -1490,10 +1572,6 @@
             Data warehouses
             Small investigations
             Neo4j
-        </section>
-
-        <section>
-            <h3>Hadoop Ecosystem</h3>
         </section>
 
         <section>
@@ -1516,8 +1594,18 @@
 
         <section>
             <h3>Setting up</h3>
+            Install Anaconda
+            (install in anaconda: scikit-learn, numpy?)
             Anaconda
             Apache Spark
+
+            Juypter notebook (no longer profiles)
+            findspark
+
+            import findspark
+            findspark.init()
+
+            import pyspark
         </section>
 
         <section>
@@ -1525,16 +1613,9 @@
         </section>
 
         <section>
-            Environment setup
-
-            Installing Anaconda then PySpark
-        </section>
-
-        <section>
             Running the environment
+            ...
         </section>
-
-        <!-- BACK -->
 
         <section>
             <h2>Where data scientists work?</h2>
@@ -1576,13 +1657,6 @@
             <h3>Where data scientists work?</h3>
             In fact, data science is becoming so important that it is starting hard to get C-suite job without it.
             <!-- TODO: source -->
-        </section>
-
-        <section>
-            <h3>but, also roles that are in some part a data science, like</h3>
-            <ul>
-                <li>e</li>
-            </ul>
         </section>
 
         <section>
@@ -2023,6 +2097,7 @@
                 return !!document.querySelector('[data-markdown]');
             }
             },
+                /*
             {
                 src: 'plugin/highlight/highlight.js', async: true, condition: function () {
                 return !!document.querySelector('pre code');
@@ -2030,6 +2105,8 @@
                 hljs.initHighlightingOnLoad();
             }
             },
+            */
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
             {src: 'plugin/zoom-js/zoom.js', async: true},
             {src: 'plugin/notes/notes.js', async: true},
             { src: 'plugin/math/math.js', async: true }
