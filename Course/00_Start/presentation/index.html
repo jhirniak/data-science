@@ -1,0 +1,2154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta faccharset="utf-8">
+
+    <title>Data Science Complete - Introduction</title>
+
+    <meta name="description" content="Data Science Complete - Introduction to data science">
+    <meta name="author" content="John Hrafen">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/blood.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/monokai_sublime.css">
+    <link rel="stylesheet" href="css/extra.css">
+    <link rel="stylesheet" type="text/css" href="css/evenZoom.css">
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/fire-0.62.min.js"></script>
+    <script src="js/evenZoom.js"></script>
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+    <!-- Wrap all slides in a single "slides" class -->
+    <div class="slides">
+
+        <!-- BEGIN SLIDES -->
+        <section>
+            <h2>Introduction to</h2>
+            <h2>Data Science</h2>
+            <h3>by <a class="mm" href="mailto:nospam@thanks.com">John Hrafen</a></h3>
+        </section>
+
+        <section>
+            <blockquote>
+                There are 2 types of people in the world:
+                those who can extrapolate from incomplete data.
+            </blockquote>
+        </section>
+
+        <!-- 1: INFORMATON AGE REVOLUTION -->
+
+        <section>
+            <h2>Data Revolution</h2>
+        </section>
+
+        <section>
+            <h3>Dawn of Information Age</h3>
+            <img src="img/ie_0.png"/>
+            <div class="source">
+                <a href="http://www.washingtonpost.com/wp-dyn/content/article/2011/02/10/AR2011021004916.html">Washington
+                    Post</a>
+                <a href="https://youtu.be/EHTmxmuhZ10">Philip Evans TedTalk</a>
+            </div>
+        </section>
+
+        <section>
+            <h3>Information Age: Forecast</h3>
+            <img src="img/ie_1.png"/>
+            <div class="source">
+                <a href="http://www.washingtonpost.com/wp-dyn/content/article/2011/02/10/AR2011021004916.html">Washington
+                    Post</a>
+                <a href="https://youtu.be/EHTmxmuhZ10">Philip Evans TedTalk</a>
+            </div>
+        </section>
+
+        <section>
+            <p>Sign of the times: everybody is connected and everything is recorded. Just look at how many people hold their phones.</p>
+            <img class="stretch" src="img/obama-in-ohio_2.jpg" />
+        </section>
+
+        <section>
+            <p>But not only that!</p>
+
+            <p>President Barack Obama on 9 May 2013 signed the open data executive order:</p>
+            <blockquote>
+                Making Open and Machine Readable the New Default for Government Information.
+            </blockquote>
+            <a href="#/5">(Video on the next slide)</a>
+
+            <div class="source">
+                <a href="https://www.whitehouse.gov/the-press-office/2013/05/09/executive-order-making-open-and-machine-readable-new-default-government-">Executive Order</a>
+                <a href="http://time.com/4051119/obama-big-data-federal-government/">How US Government Uses Big Data</a>
+            </div>
+
+            <p>But, many different governments adopt similar open data policies around the world, enabling changes and innovations on unthought before scale.</p>
+
+            <p>Data available at <a href="http://www.data.gov/">data.gov</a>.</p>
+        </section>
+
+        <section>
+            <h4>Obama announces open data policy</h4>
+            <iframe class="framed" data-autoplay style="min-height: 468px; min-width: 832px;" src="https://www.youtube.com/embed/qSQPgADT6bc?iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            IoT: soon every item is going to track physical world
+            <img src="img/iot.jpg"/>
+        </section>
+
+        <section>
+            ... and this data can be used in many surprising ways, e.g. using <a href="https://jawbone.com/support/articles/000008210/tracking-sleep-up24">Jawbone sleep tracking</a> for
+            <ul>
+                <li>finding Napa earthquake epicenters (by monitoring where people where waking up at given time) and</li>
+                <li>daylight saving time effect on our health and productivity (need to mash with other data).</li>
+            </ul>
+            <p>Data Science has potential to transform our lives for the better!</p>
+            <div class="source">
+                <a href="https://jawbone.com/blog/napa-earthquake-effect-on-sleep/">Napa Earthquake Effect on Bay Area Sleepers</a>
+                <a href="https://jawbone.com/blog/sleep-week/">Celebrating National Sleep Week</a>
+            </div>
+        </section>
+
+        <section>
+            <h3>Information Age: Key Observations</h3>
+            <ul>
+                <li>50% of data has IP address (in other words is online)!</li>
+                <li>By 2020, almost all data will be connected.</li>
+                <li>The abundance and ubiquitousness of data changes business intelligence models (e.g. think
+                    Encyclopedia Britannica rendered obsolete by Wikipedia).
+                </li>
+                <li>We literally have a whole world in our pocket.</li>
+                <li>We no longer choose to be connected, but not to be.</li>
+                <li>Some companies accumulated lots of data over years, in a sense they sit on a pile of gold.</li>
+                <li><i>Data is our most valuable natural resource.</i></li>
+                <li><i>But, we need to be able to connect the dots.</i></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>How much data?</h3>
+            <table id="how-much-data">
+                <tr>
+                    <td>Google</td>
+                    <td>processes 20 PB a day (2008)<br/>crawls 20 B web pages a day (2012)</td>
+                </tr>
+                <tr>
+                    <td>Facebook</td>
+                    <td>&gt; 100 PB of user data<br/>+ 500 TB/day (2012)</td>
+                </tr>
+                <tr>
+                    <td>Amazon Web Services</td>
+                    <td>S3: 449 B objects<br/>peak 290k requests/second (2011)<br/>1T objects(2012)</td>
+                </tr>
+                <tr>
+                    <td>JPMorgan Chase</td>
+                    <td>150 PB on 50k+ servers running 15k apps (2011)</td>
+                </tr>
+                <tr>
+                    <td>CERN</td>
+                    <td>Produces 15 PB a year</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>How much really is it?</h3>
+            <p>Google processes $ 20 $ PB a day (2008).</p>
+            <p>Tolkien's The Lord of the Rings trilogy has $ 788 $ pages ($ 311 + 258 + 219 $) totalling to $ 2.5 $ MB of raw text.</p>
+            $$ \frac{20 PB}{2.5 MB} = \frac{2^{50}}{2^{20}} = 2^{30} \approx 10^9 $$
+            <p><i>Google analyses an equivalent of 1 billion of LoTR trilogies every day!</i></p>
+            <p>It is not just collection, this data is processed.</p>
+            <p>I wish I could read so many books a day!</p>
+        </section>
+
+        <section>
+            <h3>World changed a lot, very quickly (1981 -> 2016)</h3>
+            <img src="img/640kb.jpg" />
+            <div class="source">
+                <a href="http://www.computerworld.com/article/2534312/operating-systems/the--640k--quote-won-t-go-away----but-did-gates-really-say-it-.html">The origin of 640KB quote</a></a>
+            </div>
+        </section>
+
+        <section>
+            <p>What was unthinkable even for visionaries 30 years ago, today seems obvious for everyone.</p>
+
+            <p>Information age revolution takes place right now and data scientist are at the edge of it...</p>
+
+            <p>But, who exactly is a data scientist?</p>
+        </section>
+
+        <!-- 2: ABOUT DATA SCIENTIST -->
+
+        <section>
+            <h2>Who is a data scientist?</h2>
+            <h3 class="fragment highlight-red">Someone with "the sexiest job of the 21st century".</h3>
+            <div class="source">
+                <a href="http://mashable.com/2016/01/20/the-best-jobs-in-america-2016/#.ZXIUN_xlkqs">The best job in America has a median salary of over $116,000</a>
+            </div>
+        </section>
+
+        <section>
+            <svg height="600" width="666">
+                <circle cx="333" cy="200" r="200" stroke="#081f33" stroke-width="2" fill="#134674" fill-opacity="0.4" />
+                <text x="200" y="125" fill="white">Business Analysis</text>
+                <circle cx="200" cy="400" r="200" stroke="#2f3a06" stroke-width="2" fill="#5E740B" fill-opacity="0.4" />
+                <text x="60" y="495" fill="white">Statistics</text>
+                <circle cx="466" cy="400" r="200" stroke="#591514" stroke-width="2" fill="#dc322f" fill-opacity="0.4" />
+                <text x="450" y="485" fill="white">
+                    <tspan>Software</tspan>
+                    <tspan dx="-180" dy="30">Engineering</tspan>
+                </text>
+            </svg>
+        </section>
+
+        <section>
+            <svg height="600" width="666">
+                <circle cx="333" cy="200" r="200" stroke="#081f33" stroke-width="2" fill="#134674" fill-opacity="0.4" />
+                <text x="200" y="125" fill="white">Business Analysis</text>
+                <circle cx="200" cy="400" r="200" stroke="#2f3a06" stroke-width="2" fill="#5E740B" fill-opacity="0.4" />
+                <text x="60" y="495" fill="white">Statistics</text>
+                <circle cx="466" cy="400" r="200" stroke="#591514" stroke-width="2" fill="#dc322f" fill-opacity="0.4" />
+                <text x="450" y="485" fill="white">
+                    <tspan>Software</tspan>
+                    <tspan dx="-180" dy="30">Engineering</tspan>
+                </text>
+
+                <text x="135" y="235" fill="#f1c40f" transform="rotate(25, 150, 270)">
+                    <tspan>Statistical</tspan>
+                    <tspan dx="-158" dy="30">Research</tspan>
+                </text>
+
+                <text x="415" y="255" fill="#f1c40f" transform="rotate(-25, 435, 270)">
+                    <tspan>Data</tspan>
+                    <tspan dx="-130" dy="30">Processing</tspan>
+                </text>
+
+                <text x="260" y="435" fill="#f1c40f">
+                    <tspan>Machine</tspan>
+                    <tspan dx="-144" dy="30">Learning</tspan>
+                </text>
+            </svg>
+        </section>
+
+        <section>
+            <svg height="600" width="666">
+                <circle cx="333" cy="200" r="200" stroke="#081f33" stroke-width="2" fill="#134674" fill-opacity="0.4" />
+                <text x="200" y="125" fill="white">Business Analysis</text>
+                <circle cx="200" cy="400" r="200" stroke="#2f3a06" stroke-width="2" fill="#5E740B" fill-opacity="0.4" />
+                <text x="60" y="495" fill="white">Statistics</text>
+                <circle cx="466" cy="400" r="200" stroke="#591514" stroke-width="2" fill="#dc322f" fill-opacity="0.4" />
+                <text x="450" y="485" fill="white">
+                    <tspan>Software</tspan>
+                    <tspan dx="-180" dy="30">Engineering</tspan>
+                </text>
+
+                <text x="135" y="235" fill="#f1c40f" transform="rotate(25, 150, 270)">
+                    <tspan>Statistical</tspan>
+                    <tspan dx="-158" dy="30">Research</tspan>
+                </text>
+
+                <text x="415" y="255" fill="#f1c40f" transform="rotate(-25, 435, 270)">
+                    <tspan>Data</tspan>
+                    <tspan dx="-130" dy="30">Processing</tspan>
+                </text>
+
+                <text x="260" y="435" fill="#f1c40f">
+                    <tspan>Machine</tspan>
+                    <tspan dx="-144" dy="30">Learning</tspan>
+                </text>
+
+                <text x="300" y="340" fill="#e67e22">
+                    <tspan>Data</tspan>
+                    <tspan dx="-110" dy="30">Science</tspan>
+                </text>
+            </svg>
+        </section>
+
+        <section>
+            <svg height="600" width="666">
+                <circle cx="333" cy="200" r="200" stroke="#081f33" stroke-width="2" fill="#134674" fill-opacity="0.4" />
+                <text x="200" y="125" fill="white">
+                    <tspan>Business Analysis</tspan>
+                    <tspan x="80" dy="-5em" fill="#3498db" font-size="0.6em">Storytelling, domain expertise, asking the right questions,</tspan>
+                    <tspan x="60" dy="1em" fill="#3498db" font-size="0.6em">ability to prioritize, knowing the constraints, decision making, </tspan>
+                    <tspan x="0" dy="1em" fill="#3498db" font-size="0.6em">performance criteria, business intelligence, creativity, communication</tspan>
+                </text>
+
+                <circle cx="200" cy="400" r="200" stroke="#2f3a06" stroke-width="2" fill="#5E740B" fill-opacity="0.4" />
+                <text x="70" y="485" fill="white">
+                    <tspan>Statistics</tspan>
+                    <tspan x="15" dy="1.4em" fill="#37d077" font-size="0.6em">Machine learning, statistical </tspan>
+                    <tspan x="15" dy="1em" fill="#37d077" font-size="0.6em">data modelling, experiment</tspan>
+                    <tspan x="0" dy="1em" fill="#37d077" font-size="0.6em">design, testing and verification</tspan>
+                </text>
+
+                <circle cx="466" cy="400" r="200" stroke="#591514" stroke-width="2" fill="#dc322f" fill-opacity="0.4" />
+                <text x="470" y="455" fill="white">
+                    <tspan>Software</tspan>
+                    <tspan x="440px" dy=".8em">Engineering</tspan>
+                    <tspan dx="-20" dy="1.6em" fill="#f39c12" font-size="0.6em">
+                        <tspan x="370px" dy="1.4em">High-performance and scientific</tspan>
+                        <tspan x="320px" dy="1em">computing, advanced algorithms,</tspan>
+                        <tspan x="328px" dy="1em">application development, platform,</tspan>
+                        <tspan x="340px" dy="1em">data governance and logistics, ...</tspan>
+                    </tspan>
+                </text>
+
+                <text x="135" y="235" fill="#f1c40f" transform="rotate(25, 150, 270)">
+                    <tspan>Statistical</tspan>
+                    <tspan dx="-158" dy="30">Research</tspan>
+                </text>
+
+                <text x="415" y="255" fill="#f1c40f" transform="rotate(-25, 435, 270)">
+                    <tspan>Data</tspan>
+                    <tspan dx="-130" dy="30">Processing</tspan>
+                </text>
+
+                <text x="260" y="435" fill="#f1c40f">
+                    <tspan>Machine</tspan>
+                    <tspan dx="-144" dy="30">Learning</tspan>
+                </text>
+
+                <text x="300" y="340" fill="#e67e22">
+                    <tspan>Data</tspan>
+                    <tspan dx="-110" dy="30">Science</tspan>
+                </text>
+            </svg>
+        </section>
+
+        <section>
+            <p>How data scientist title come to be:</p>
+            <blockquote style="font-size: .75em;">
+                “Business analyst” seemed too limiting. “Data analyst” was a contender, but we felt that title might
+                limit what people could do. After all, many of the people on our teams had deep engineering expertise.
+                “Research scientist” was a reasonable job title used by companies like Sun, HP, Xerox, Yahoo, and IBM.
+                However, we felt that most research scientists worked on projects that were futuristic and abstract,
+                and the work was done in labs that were isolated from the product development teams. It might take years
+                for lab research to affect key products, if it ever did. Instead, the focus of our teams was to work on
+                data applications that would have an immediate and massive impact on the business. The term that seemed
+                to fit best was <i>data scientist: those who use both data and science to create something new</i>.
+            </blockquote>
+            <div class="source">
+                <a href="http://radar.oreilly.com/2011/09/building-data-science-teams.html">Building data science team</a>
+            </div>
+        </section>
+
+        <section>
+            <h3>Who is a data scientist?</h3>
+            <blockquote>
+                [..] a data scientist is a predictive analytics professional who uses statistics and
+                predictive modeling to solve business problems, and who has experience with tools for organizing
+                unstructured, often streaming Big Data. They can work with a wide variety of data, as they have the
+                skills to build their own utilities to acquire and clean it, and don’t rely on out-of-the-box solutions to
+                structure their data.
+            </blockquote>
+            <div class="source">
+                <a href="http://www.burtchworks.com/files/2014/07/Burtch-Works-Study_DS-2015_final.pdf">Burtch Works Study - Data Science 2015</a>
+                </br> *Burtch Works is a recruiting agency for people with quantitative skills</p>
+            </div>
+        </section>
+
+        <section>
+            <p>Data scientist is a higly educated person.</p>
+            <img class="transparent stretch" src="img/ds-by-degree.png"/>
+        </section>
+
+        <section>
+            <h3>Key characteristics of Data Scientist by DJ Patil</h3>
+            <ul>
+            <li><i>Technical expertise</i> - the best data scientists typically have deep expertise in some scientific discipline.</li>
+            <li><i>Curiosity</i> - a desire to go beneath the surface and discover and distill a problem down into a very clear set of hypotheses that can be tested.</li>
+            <li><i>Storytelling</i> - the ability to use data to tell a story and to be able to communicate it effectively.</li>
+            <li><i>Cleverness</i> - the ability to look at a problem in different, creative ways.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Warning to the wise</h3>
+            <p>Over the time, data scientist become a bloated term as everyone wanted to add something to it.</p>
+            <p>Ironically, the expanded expectations of Data Scientists are a product of their own success.
+                The ability to advise executives, understand deeply technical problems, communicate, (*INSERT ENDLESS LIST*),
+                illustrates that business leaders see Data Scientists as a bridge that can finally align IT and Business
+                in a much more permanent and productive manner.</p>
+        </section>
+
+        <section>
+            <h4>Data Science = &#189; Technology + &#189; People</h4>
+            <p>Data science is not a process or a field that can be simply automated or replaced by a smart technology.</p>
+            <p>This is a field in which people use advanced technology to do research that wouldn't be viable otherwise and gain powerful insights shaping the business today.</p>
+            <p>More often toolkit will be chosen to suit a team not the team hired to work with a given set of tools.
+                Of course, it is different story with a single hire into an existing team.</p>
+            <p>Some companies that made their business around data science believe that humans will never be replaced by machines.</p>
+        </section>
+
+        <section>
+            <h3>What data scientists do?</h3>
+            <ul>
+                <li>Find trends and patterns among noise,</li>
+                <li>Visualize and communicate results,</li>
+                <li>Implement advanced algorithms for analysis,</li>
+                <li>Develop application and dashboards,</li>
+                <li>Design sound experiments,</li>
+                <li>Ask the right questions,</li>
+                <li>Focus on actionalbe insights,</li>
+                <li>Gain subject expertise,</li>
+                <li>...</li>
+            </ul>
+        </section>
+
+        <section>
+            <p>Data scientists come in different flavours:</p>
+            <ul>
+                <li><i>Data business person</i> answers business questions such as forecasting the revenue for the next year.</li>
+                <li><i>Data creative</i> explores data revealing new patterns and people experiences, dives into data gain new insights.</li>
+                <li><i>Data engineer</i> creates the platform to answer business questions such as computational clusters with Apache Hadoop or Spark, Anaconda tool-set, dashboards, ..., and rich variety of others.</li>
+                <li><i>Data researcher</i> models data and develop algorithms to predict the future, people's tastes, loyalty, and how to optimise those events.</li>
+            </ul>
+            <p>... and different flavours of data scientists spend their time differently...</p>
+        </section>
+
+        <section>
+            <p>The width is per cent of data scientist answering <a href="http://www.datacommunitydc.org/blog/2012/08/data-scientists-survey-results-teaser/">the survey</a>.</p>
+            <img class="stretch" style="height:60vh" src="img/skills_mosaic.png" />
+        </section>
+
+        <!-- 3: What data scientists do, dive in -->
+
+        <section>
+            <h2>Data Science Expertise</h2>
+        </section>
+
+        <section>
+            <div class="ds-box">
+                <div class="circle se"><p>Software Engineer</p></div>
+                <div class="circle stat"><p>Statistician</p></div>
+                <div class="circle biz"><p class="fragment highlight-blue">Business Analyst</p></div>
+                <p>Data Scientist</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Business Analysis</h3>
+
+            <p>The least transferable skill and for quite obvious reasons most domain related. Also compared to others
+                quickest to learn.</p>
+            <p>The good news is that most companies are willing to hire candidates with strong background in
+                mathematics/statistics and software engineering and to teach them required domain knowledge.</p>
+            <p>At the same time, essential skills such as storytelling and ability to express complex ideas clearly require
+                a lot of practice, but are often neglected by graduates from scientific backgrounds.
+                <i>Don't be one of them!</i></i></p>
+        </section>
+
+        <section>
+            <p>Kickoff cheatsheet, for starters in BA...</p>
+            <object data="res/ba.pdf" type="application/pdf" width="100%" height="600px" frameborder="0">
+                <p>It appears you don't have a PDF plugin for this browser.
+                    You can download file <a href="res/ba.pdf">here.</a></p>
+            </object>
+        </section>
+
+        <section>
+            <blockquote>
+                Let data set change your mindset.
+            </blockquote>
+        </section>
+
+        <section>
+            <h3>Work smart!</h3>
+            <blockquote style="width: 100%; font-size: .7em;">
+                One salutary incident that I recall concerned a British mathematical physicist and an American
+                theoretical physicist, Dr. Charles Kittel, who had been set together, side by side, to work on
+                the problem of deducing the characteristics of German magnetic mines laid at sea, especially
+                the sensitivity and polarity of the firing mechanism. The data from which the characteristics were
+                to be deduced were the reports of our minesweepers as they exploded the mines, with the positions of
+                the explosions being reported as ranges and bearings from the minesweepers. The first thing that Kittel
+                wanted to do was to take a few trips on a minesweeper to sample the data for himself. The British
+                theorist refused to do this, on the argument that he could only make a few trips, and therefore any
+                experience so gained might be heavily biased, and therefore much too dangerous as a basis for
+                generalization. So he stuck to his desk while Kittel went out minesweeping. What Kittel immediately
+                found was that the reports from the minesweeping crews were wildly inaccurate as regards both range and
+                bearing, and the only item of data on which one could rely was whether the mine had exploded to port or
+                starboard. Simplifying all the later reports down to this extremely limited observation, he nevertheless
+                succeeded in deducing the answer; but the British theorist went on accepting the data as accurate and
+                never reached an answer.
+            </blockquote>
+            <div class="source">
+                <a href="http://www.mimno.org/articles/minesweeper/">"Get out on the ship!" by David Mimno</a>
+            </div>
+        </section>
+
+        <section>
+            <h4>Work smart and the lie of average...</h4>
+            <blockquote class="expanded" style="font-size: .7em">
+                [..] the United States air force had a serious problem: its pilots could not keep control of their planes [..]  the problems were so frequent and involved so many different aircraft that the air force had an alarming, life-or-death mystery on its hands. [..]  At first, the military brass pinned the blame on the men in the cockpits, citing “pilot error” as the most common reason in crash reports. This judgment certainly seemed reasonable, since the planes themselves seldom malfunctioned. [..] piloting skills were not the cause of the problem. If it wasn't human or mechanical error, what was it? [..] officials turned their attention to the design of the cockpit itself. [..] when the army was designing its first-ever cockpit, engineers had measured the physical dimensions of hundreds of pilots, and used this data to standardize the dimensions of the cockpit. [..]  In 1950, [..] measured more than 4,000 pilots on 140 dimensions of size [..] and calculated the average for each of these dimensions. [..] the consensus among fellow air force researchers was that the vast majority of pilots would be within the average range on most dimensions. After all, these pilots had already been pre-selected because they appeared to be average sized. [..] The scientists also expected that a sizable number of pilots would be within the average range on all 10 dimensions. But even Daniels was stunned when he tabulated the actual number.
+                <i>Zero.</i>
+                Out of 4,063 pilots, not a single airman fit within the average range on all 10 dimensions. [..] <i>There was no such thing as an average pilot.</i>
+            </blockquote>
+            <div class="source">
+                <a href="https://www.thestar.com/news/insight/2016/01/16/when-us-air-force-discovered-the-flaw-of-averages.html">When U.S. air force discovered the flaw of averages</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Be a storyteller</h2>
+        </section>
+
+        <section>
+            <h3>Ben Wellington on data storytelling</h3>
+            <iframe class="framed" data-autoplay style="min-height: 468px; min-width: 832px;" src="https://www.youtube.com/embed/6xsvGYIxJok?iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+            <br />
+            <a href="http://iquantny.tumblr.com/">and more of it @ I Quant NY</a>
+        </section>
+
+        <section>
+            <h4>James Veitch's story proving that you can make even a talk about SPAM exciting</h4>
+            <iframe class="framed" data-autoplay style="min-height: 468px; min-width: 832px;" src="https://www.youtube.com/embed/_QdPW8JrYzQ?iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h3>Good presentations</h3>
+            <ul class="stretch">
+                <li>touch your heart then your mind.</li>
+                <li>show your passion.</li>
+                <li>lead the audience to enlightenment (a.k.a. "aha" moment).</li>
+                <li>are personal (you have to be trustworthy).</li>
+                <li>are only as long as they need to be. TED suggest that the optimal presentation time is 18 minutes.</li>
+                <li>cause the action you intended.</li>
+                <li>bring the message in a way everyone in audience can relate to and understand.</li>
+                <li>use clear and strong visual information, but only as much as it is needed.</li>
+                <li>connect you with the audience.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Aristotle's triad</h3>
+            <p>There are 3 elements to every good rhetoric:</p>
+            <ul class="stretch" style="font-size: .7em">
+                <li><i>logos</i> (gr. words; here meaning logic) - your arguments must have logical flow, learn both syllogisms and <a href="https://yourlogicalfallacyis.com/">logical fallacies</a> and use them to your advantage;<br />
+                <blockquote class="expanded">
+                    Although Cathy is over 60 years old, she's also relatively tech-savvy and already watches her
+                    favourite shows on Netflix. Karl, on the other hand, subscribes to sport broadcasting channels -
+                    experience hard to replicate online. Therefore, Cathy is much more likely to <a href="https://en.wikipedia.org/wiki/Cord-cutting">cut the cord</a> and
+                    we should make a special offer to her and not Karl.
+                </blockquote></li>
+                <li><i>ethos</i> (gr. character; here meaning ethics) - appeal to the character of the speaker and possibly ethical and moral system; show the audience you are to be trusted on "this"<br />
+                <blockquote class="expanded">
+                    First of all, I have to say, as a businessman, I get along with everybody. I have business
+                    all over the world. [..] We need people that know what the
+                    hell they’re doing. And politicians, they’re all talk, they’re no action. And that’s why people are
+                    supporting me.
+                </blockquote>
+                    ~ Donald Trump during <a href="http://www.nytimes.com/2016/02/14/us/politics/transcript-of-the-republican-presidential-debate.html?_r=0">South Carolina republican debate</a>.
+                </li>
+                <li><i>pathos</i> (gr. feeling, emotions) - pathos is always in our argument because we are humans,
+                    but this is one the most easily abused. Connect via emotions.<br />
+                <blockquote class="expanded">
+                    We have waited for more than 340 years for our constitutional and God-given rights.
+                </blockquote>
+                    ~ Martin Luther King's in <a href="https://www.africa.upenn.edu/Articles_Gen/Letter_Birmingham.html">the letter from a Birmingham Jail</a>.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Important note #1</h3>
+            <p>If you understand how to influence people then you will be able also to spot when people try to influence
+                you.</p>
+            <p>Not everyone has always genuine intentions when influencing you - just take for example politicians and not everyone is a great presenter - take for example your least favourite teacher.</p>
+            <p>By knowing ways to influence people you also will be able to better distill the truth from bias.</p>
+        </section>
+
+        <section>
+            <h3>Important note #1</h3>
+            <p>In large organisations, such as where there is the most work for data scientists, you will need to listen
+                more often than to give a speech. Hence, applying this skill in the opposite direction helps you get
+                the information and understanding of data you need from the speaker.</p>
+            <p>The value of this is not to be undermined, even more given that</p>
+            <blockquote>
+                A lot of times, people don't know what they want until you show it to them.
+            </blockquote>
+            <author>
+                <p>Steve Jobs</p>
+            </author>
+        </section>
+
+        <section>
+            <h3>Important note #2</h3>
+            <p>BTW, if you want to say that this all logos, ethos, and pathos is not how one should deliver a presentation or speech then...</p>
+            <p>... you have been a victim to the paper clip guy.</p>
+            <p>When you are presenting, you are selling your idea.
+            It is no good to someone if you are unable to sell it.</p>
+            <blockquote class="fragment" data-fragment-index="1">
+            To me, job titles don’t matter. Everyone is in sales. It’s the only way we stay in business.
+            </blockquote>
+            <author class="fragment" data-fragment-index="1">
+                <p>Harvey Mackay</p>
+            </author>
+        </section>
+
+        <section>
+            <p>Great speeches do not only influence people, organisations, audience, but also inspire and motivate them,
+                and they can even change the world, but only if you will be able to touch their hearts.</p>
+            <p><i>Surprisingly enough, logos (logic) is only 10% of the most successful presentations. You must have
+                the hard evidence, but you also need to make people care about your message.</i></p>
+            <p>Aristotle knew that pathos must be part of each oratory <span id="time-since-aristotle">2350</span> years ago!</p>
+            <p>Raw data is very rarely successful and passion of the speaker is 3rd most significant factor, considered
+                in funding decisions by angel investors.</p>
+        </section>
+
+        <section>
+            <h3>How to best learn storytelling?</h3>
+            <div class="fragment">
+                <h3 class="highlight">From experts!</h3>
+                <p>My favourites:</p>
+                <ul class="expanded small-font space-bullets">
+                    <li><a href="https://www.ted.com/talks">TED Talks</a>, <a href="https://www.ted.com/playlists/77/11_must_see_ted_talks">mainly the 11 classics (TED 101)</a></li>
+                    <li><a href="https://www.africa.upenn.edu/Articles_Gen/Letter_Birmingham.html">Martin Luther King, Jr.</a></li>
+                    <li>Steve Jobs, particularly <a href="https://youtu.be/D1R-jKKp3NA">Stanford Commencement Speech 2005</a><br/>
+                    <blockquote class="expanded">
+                        The only way to be truly satisfied is to do what you believe is great work.
+                        And the only way to do great work is to love what you do.
+                        If you haven't found it yet, keep looking.
+                        Don't settle.
+                    </blockquote> </li>
+                    <li>Franklin Delano Roosevelt<br />
+                    <blockquote class="expanded">
+                        The only thing we have to fear is fear itself.
+                    </blockquote> </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <ul class="expanded small-font space-bullets">
+                <li>Albert Einstein<br/>
+                    <blockquote class="expanded">
+                        If you can't explain it simply, you don't understand it well enough.
+                    </blockquote> </li>
+                <li>Winston Churchill<br/>
+                    <blockquote class="expanded">
+                        If you're going through hell, keep going.
+                    </blockquote> </li>
+                <li>John F. Kennedy<br/>
+                    <blockquote class="expanded">
+                        A man may die, nations may rise and fall, but an idea lives on.
+                    </blockquote> </li>
+                <li>Joseph Stalin<br/>
+                    <blockquote class="expanded">
+                        Ideas are more powerful than guns. We would not let our enemies have guns, why should we let them have ideas.
+                    </blockquote>
+                </li>
+                <li>Ronald Reagan<br/>
+                    <blockquote class="expanded">
+                        The most terrifying words in the English language are: I'm from the government and I'm here to help.
+                    </blockquote> </li>
+                <li>Mahatma Gandhi<br/>
+                    <blockquote class="expanded">
+                        Live as if you were to die tomorrow; learn as if you were to live forever.
+                    </blockquote> </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>The power of character</h3>
+            <blockquote>
+                Go as far as you can see; when you get there, you'll be able to see farther.
+            </blockquote>
+            <author>
+                <p>John Pierpont Morgan</p>
+            </author>
+        </section>
+
+        <section>
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="http://www.amazon.co.uk/Talk-Like-TED-Speaking-Secrets/dp/1447261135">Talk Like TED by Carmine Gallo</a></li>
+                <li><a href="http://www.amazon.co.uk/The-Presentation-Secrets-Steve-Jobs/dp/0071636080">The Presentation Secrets of Steve Jobs by Carmine Gallo</a></li>
+                <li><a href="http://www.amazon.co.uk/How-Win-Friends-Influence-People/dp/0091906814">How to Win Friends and Influence People by Dale Carnegie</a></li>
+                <li><a href="http://www.audible.co.uk/pd/Health-Personal-Development/Way-with-Words-Audiobook/B004F4HG0Y">Way with Words by Michael Drout</a></li>
+                <li><a href="http://www.amazon.co.uk/Freakonomics-Economist-Explores-Hidden-Everything/dp/0141019018/">Freakonomics by Stephen Dubner and Steven Levitt</a></li>
+            </ul>
+
+            <p class="fragment">Have other favourites? <a class="mm" href="mailto:nospam@thanks.com">Let me know!</a></p>
+        </section>
+
+        <section data-state="fire-on" data-background-color="black">
+            <h3 style="position: fixed; top: 40%;" data-fragment-index="1" class="fragment highlight-red">If you can't explain your work it can go to hell</h3>
+            <div class="fire stretch fragment" style="z-index: -10; position: fixed" data-fragment-index="1"></div>
+        </section>
+
+        <section data-background="img/heaven.jpg">
+            <div style="height: 20vh; clear: both;"></div>
+            <h3 class="fragment highlight-blue">Visualisation</h3>
+        </section>
+
+        <section>
+            <blockquote>
+                Categories such as time, space, cause, and number represent the most general relations which exist
+                between things; surpassing all our other ideas in extension, they dominate all the details of our
+                intellectual life. If humankind did not agree upon these essential ideas at every moment, if they did
+                not have the same conception of time, space, cause, and number, all contact between their minds would be
+                impossible...
+            </blockquote>
+            <author>
+                <p>Emile Durkheim, Les formes élémentaires de la vie religieuse (Paris, 1912)</p>
+            </author>
+        </section>
+
+        <section>
+            <h3>Statistical Graphics</h3>
+            <p>Statistical graphics are instruments to help people reason about quantitive information.</p>
+            <p>Often the most effective way to describe, explore, and summarize a set of numbers - even a very large set - is to look at pictures of those numbers.</p>
+            <p>Of all methods for analyzing and communicating statistical information, well-designed data graphics are usually the simplest and at the same time the most powerful.</p>
+            <p>Human eye have amazing ability to extract a lot of information from a small area (example on the next slide).</p>
+            <p>So, how to visualize statistical information?</p>
+        </section>
+
+        <section>
+            <p class="small-font">The below map contains location and boundaries of 30,000 communes. Tabular representation of the same data would require 240,000 numbers. Graphical representations have incredible ability to compress data.</p>
+            <img class="stretch" src="img/communes-of-france.png" />
+        </section>
+
+        <section>
+            <h3>Graphical Excellence</h3>
+            <p>Excellence in statistical graphics consists of complex ideas communicated with clarity, precision, and efficiency. Graphical displays should</p>
+            <ul class="stretch">
+                <li>show the data</li>
+                <li>induce the viewer to think about the substance rather than about methodology, graphic design, the technology of graphic production, or something else; do not be a victim to fancy computer generated effects that only produce clutter</li>
+                <li>avoid distorting what the data have to say; present data in a simplest possible way, but not too simple</li>
+                <li>present may numbers in a small space; if you need to reference figure again you can avoid writing "fig 1.", but can post thumbinal instead</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Graphical Excellence</h3>
+            <ul class="stretch">
+                <li>make large data sets coherent</li>
+                <li>encourage the eye to compare different pieces of data</li>
+                <li>reveal the data at several levels of detail, from a board overview to the fine structure</li>
+                <li>serve a reasonably clear purpose: description, exploration, tabulation, or decoration</li>
+                <li>be closely integrated with the statistical and verbal description of a data set.</li>
+                <li>optimise data-ink used; if a line, dot, arrow, text, etc. do not contribute to increasing information in the graph then likely it should not be there</li>
+            </ul>
+        </section>
+
+        <section>
+            <p>Graphics need to make data clearer. Shape data to lead observer to conclusion.</p>
+
+            $$
+            \begin{equation}
+            \begin{split}
+            \mbox{lie factor} &= \frac{\mbox{size of effect shown in graphic}}{\mbox{size of effect in data}}
+            \end{split}
+            \end{equation}
+            $$
+
+            <p>Lie factor within $ [0.95, 1.05] $ is acceptable, beyond that means that data is misleading.</p>
+
+            <p>Can also define $ log LF $, where $ log LF < 0 $ means that data is underrepresented  and $ log LF > 0 $ means that is overrepresented.</p>
+
+            <p>Dimensionality expansion (e.g. showing stock price of crude oil in 3D barrels: 1D -> 3D) leads to $ LF $ explosion due to power factor.</p>
+        </section>
+
+        <section>
+            <h4>$ LF $ of $ 9.4 $</h4>
+            <p>In the below picture $ 454\% $ price increase is displayed as $ 4,280\% $ increase.</p>
+            <img src="img/crude-oil.jpg" alt="Crude Oil Price Increase with a Lie Factor of 9.4" />
+        </section>
+
+        <section>
+            <p>Here, the problem is too strong emphasis on design variation, without regard for reflecting the actual data variation.</p>
+
+            <p>The confounding of design variation with data variation over the surface of graphic leads to ambiguity and deception.</p>
+
+            <p>Reflect data dimensionality and do not inflate the dimensions (design dimensionality should be less or same as data dimensionality).</p>
+
+            <i>Show data variation, not design variation</i>
+
+            <p>However, it generally is a good idea to introduce other design variation (e.g. depth, shade, number instead of point, etc.) to represent data dimensions with less design dimensions.</p>
+        </section>
+
+        <section>
+            <h4>But, how bad can it be? Unfortunately, enormous amount of data printed over and over and published over the Internet are not only misguiding, but also painful to watch.</h4>
+        </section>
+
+        <section>
+            <h4>Probably the worst pie chart ever...</h4>
+            <img class="stretch plain" src="img/worst-pie.jpg" alt="Worst pie-chart ever" />
+            <div class="source">
+                <a href="https://www.vice.com/en_uk/read/foi-uk-drug-conviction-ethnicity-282">Why Are So Many Black People Being Convicted of Drug Dealing in London?</a>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div class="content">
+                    <p>Not only this pie chart data could be presented using a table:</p>
+                    <table style="font-size: .5em">
+                        <tr><td>Race</td><td>Convictions</td></tr>
+                        <tr><td>White</td><td>6584</td></tr>
+                        <tr><td>Black</td><td>2356</td></tr>
+                        <tr><td>Asian</td><td>1161</td></tr>
+                        <tr><td>Mixed</td><td>508</td></tr>
+                        <tr><td>Not stated</td><td>1046</td></tr>
+                        <tr><td>Other</td><td>124</td></tr>
+                    </table>
+                </div>
+                <div class="margin">
+                    <img class="plain" src="img/worst-pie.jpg" alt="Worst pie-chart ever" />
+                </div>
+            </div>
+
+            <div style="clear: both">
+                <p>Information is repeated with colour and numbers.</p>
+                <p>The same chart is repeated multiple times making it only less visible.</p>
+                <p>The pie charts are presented in perspective making the reading of graphical data even trickier.</p>
+                <p>Even data is wrong. Convictions are meaningless if we don't know, for instance, total population.</p>
+            </div>
+        </section>
+
+        <section>
+            <h4>The worst bar plot ever</h4>
+            <p>What is height of those bars? The 3D and plain color makes reading the data only harder, so what is a point of it?</p>
+            <p>What does the thickness represent? Couldn't those just be lines or even a table?</p>
+            <img src="img/pointless-3d.png" alt="Pointless 3D bars" />
+        </section>
+
+        <section>
+            <h4>Raccoon to snow ratio</h4>
+            <img class="stretch" src="img/raccoon-to-snow.png" alt="Raccoon to snow ratio" />
+            <p class="fragment">I actually might starting using this one. It is hilarious :)!</p>
+        </section>
+
+        <section>
+            <h3>Money Handling</h3>
+            <p>Money value changes over time with inflation, but also can be influenced by factors such as time-value of money. Simply plotting nominal value over time is going to lead to terribly bad conclusions.</p>
+            <p>When we talk about money over multiple years then often we will want to use adjusted value. But, it is not limited to money and applies to everything that changes value over time.</p>
+        </section>
+
+        <section>
+            <h3>Money Handling</h3>
+            <img class="stretch" src="img/nominal_and_adjusted_price-IBM.png" alt="Comparison of IBM in nominal and adjusted price"/>
+        </section>
+
+        <section>
+            <h3>Context principle</h3>
+            To be truthful and revealing, data graphics must bear on the question at heart of quantitative thinking: "Compared to what?". The emaciated, data-thin design should always provoke suspicion, for graphic often lie by omission, leaving out data sufficient for comparison.
+            <p><i>
+                Graphics must not quote data out of context.
+            </i></p>
+        </section>
+
+        <section>
+            <p>Local government could advertise a success of police, attributed to increased number of controls, in death reduction, but does the below graph tell the truth?</p>
+            <img class="stretch" src="img/traffic_deaths_2yrs.png" alt="Traffic Deaths for 2 Years in Detroit" />
+        </section>
+
+        <section>
+            <p>We can easily imagine data to look like in one of the subplots. Actually the red line here shows the actual data, with the thick line being the graph from the previous slide.</p>
+            <img class="stretch" src="img/traffic_deaths_interpolate.png" alt="Traffic Deaths for 2 Years in Detroit" />
+        </section>
+
+        <section>
+            <h3>No context = no information</h3>
+            <img class="stretch" src="img/russia-iran-war-spendings.jpg" alt="Total Military Spending of Iran and Russia" />
+            <p>Can you believe that it was published by World Bank?</p>
+        </section>
+
+
+        <section>
+            <h3>Ambiguity</h3>
+            <p>Like in a game of charades, everyone's perception of the same can be different. Hence, know your audience and do not make too easily assumptions. Different people can see different things in the same graph, depending on their background and data context.</p>
+            <p>Where is ambiguity make explicit what is meant by data for example using annotation.</p>
+            <p>However, never underestimate your audience. Often people are capable to induce much more than the author thought. Making everything too obvious make annotations redundant and data boring.</p>
+        </section>
+
+        <section>
+            <h3>Ambiguity</h3>
+            <p>Ambiguity that would be fine in art, in statistical graphic needs to be specified.</p>
+            <img class="stretch" src="img/face-trees.jpg" />
+        </section>
+
+        <section>
+            <h3>Ambiguity</h3>
+            <p>So, how important is it?</p>
+            <img src="img/foreplay.png" alt="Importance of fore-what?" />
+        </section>
+
+        <section>
+            <h3>Chart clutter</h3>
+            <div>
+                <div class="content" style="max-width: 50%">
+                    <p>Graphical data needs to be presented in a way as a good prose is written. The reader should not need to consult legend often and untangle complicated annotations.</p>
+                </div>
+                <div class="margin" style="max-width: 50%">
+                    <img style="max-height:500px" src="img/label-hell.jpg" />
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Chart clutter</h3>
+            <img src="img/label-hell.png" />
+        </section>
+
+        <section>
+            <h3>Six principles of data integrity</h3>
+            <ol>
+                <li>The representation of numbers, as physically measured on the surface of the graphic intself, should be directly proprotional to the numerical quantities represented.</li>
+                <li>Clear, detailed, and thorough labeling should be used to defeat graphical distortion and ambiguity. Write out explanations of the data on the graphic itself. Label important events in the data.</li>
+                <li>Show data variation, not design variation.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Six principles of data integrity</h3>
+            <ol start="4">
+                <li>In time-series displays of money, deflated and standarized units of monetary measurement are nearly always better than nominal units.</li>
+                <li>The numbe of information-carrying (variable) dimenions depicted should not exceed the number of dimensions in the data.</li>
+                <li>Graphics must not quote data out of context.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Graphical mediocrity</h3>
+            <ul>
+                <li>lie;</li>
+                <li>employment only of simple designs, understandarized time-series based on a small handful of data points;</li>
+                <li>missing the real news actually in the data;</li>
+                <li>underestimating the capability of the reader to read and understand the data</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Graphic mediocrity</h3>
+            <p>146.47% turnout in election sounds pretty good!</p>
+            <img src="img/turnout-of-146-per-cent.jpg" alt="146% turnout in Russian duma election" />
+            <div class="source">
+                <a href="http://gawker.com/5864945/putin-clings-to-victory-as-russias-voter-turnout-exceeds-146">Putin Clings to Victory as Russia's Voter Turnout Exceeds 146%</a>
+            </div>
+        </section>
+
+        <section>
+            <h3>Graphic mediocrity</h3>
+            <img src="img/graphics-lie-too.png" />
+            <div class="source">
+                <a href="http://www.nytimes.com/2015/12/13/opinion/campaign-stops/all-politicians-lie-some-lie-more-than-others.html">All Politicians Lie. Some Lie More Than Others.</a>
+            </div>
+        </section>
+
+        <section>
+            <h3>Data-Ink</h3>
+            <p>Data-ink is ink used to represent data.</p>
+            <p>Non data-ink is ink that we can erase without lossing information in our graph (e.g. removing grid, or axis tickers).</p>
+            <p><i>Use ink as effectively as possible. But, without reasonable limits.</i></p>
+            <p>Data graphics should draw the viewer's attention to the sense and substance of the data, not to something else.</p>
+            <i>Above all else show the data.</i>
+        </section>
+
+        <section>
+            <h3>Data-Ink</h3>
+            <p><i>Data-ink</i> is the non-erasable core of a graphic, the non-redundant ink arrange in response to variation in the numbers represented.</p>
+
+            $$
+            \begin{equation}
+            \begin{split}
+            \mbox{Data-ink ratio} &= \frac{\mbox{data-ink}}{\mbox{total ink used to print the graphic}} \\
+            &= \mbox{proportion of graphic's ink devoted to} \\
+            & \mbox{non-redundant display of data-information} \\
+            &= 1.0 - \mbox{proportion of a graphic that can be} \\
+            & \mbox{erased without loss of data-information}
+            \end{split}
+            \end{equation}
+            $$
+        </section>
+
+        <section>
+            <p>Good example, very high $ \mbox{data-ink ratio} $</p>
+            <img class="stretch" src="img/electroencephalograph.jpg" alt="Electroencephalograph showing stages of sleep in very efficient data-ink way" />
+        </section>
+
+        <section>
+            <h3>Grid clutter</h3>
+            <p>Grids have no place in graphs, except when aiding in reading data, but then must be less visible than data. Initially invented to aid in drawing. Most often, can be replaced with labels or simply removed.</p>
+            <img class="stretch" src="img/grid.png" alt="Grid Clutter"/>
+        </section>
+
+        <section>
+            <h4>Some ink saving can be found where you do not expect it</h4>
+            <p>Example, symmetry. When analyzing faces, wases, and other naturally symmetrical objects, people examine only one side and if other is symmetric then once quickly established they stop analysing of the other half.</p>
+            <p>Hence, we can save half-the-ink by dividing along the symmetry. At the same time, if there is asymmetry giving clear message of that by drawing both halves.</p>
+        </section>
+
+        <section>
+            <h3>Data duplication in good faith</h3>
+            <p>Sometimes it makes sense to duplicate data to reduce cognitive burden. For example, in some maps it is good to duplicate part of map on both edges allowing to read it without jumping between the two opposite sides.</p>
+            <p>Hence, even we increase non-data ink, we improve data readability.</p>
+        </section>
+
+        <section>
+            <h3>The Duck</h3>
+            <img class="stretch" src="img/big-duck.jpg" />
+            <blockquote style="font-size:.55em; width: 100%">When a graphic is taken over by decorative forms or computer debris, when the data measures and structures become Design Elements, when the overall design purveys Graphical Style rather than quantitative information, then that graphic may be called a duck in honor of the duck-form store, "Big Duck".</blockquote>
+        </section>
+
+        <section>
+            <h3>The Duck</h3>
+            <img class="stretch" src="img/can-clutter.gif" alt="Unnecessary can-duck in cans wasted since 1972" />
+            <p>Use of cans does not bring any information to the picture, but make reading axis impossible.</p>
+        </section>
+
+        <section>
+            <h3>The Duck's Attendance Matters!</h3>
+            <img class="stretch" src="img/attendance-matters.png" />
+        </section>
+
+        <section>
+            <h3>The Duck and Super Computers</h3>
+            <div class="content">
+                <img src="img/top-500-supercomputers.png" />
+            </div>
+            <div class="margin">
+            <p>Completely unreadable, but notice how the use of patterns (as if the colours wouldn't be enough) make it even less readable.</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>More Super Dumputers</h3>
+            <img src="img/wasted-ink-on-super-computers.png" />
+        </section>
+
+        <section>
+            <p>Not only pie chart doesn't introduce any data, it only brings cognitive burden. But, there is practically table in the legend, why just not to present the table and sort it in descending order?</p>
+            <img class="stretch" src="img/wasted-ink-on-reading.png" />
+        </section>
+
+        <section>
+            <h2>Principles of statistical data design</h2>
+        </section>
+
+        <section>
+            <h3>Dimension principle</h3>
+            <i>
+                The number of information-carrying (variable) dimensions depicted should not exceed the number of dimensions in the data.
+            </i>
+        </section>
+
+        <section>
+            <h3>Lie factor principle</h3>
+            $$ 0.95 < LF < 1.05 $$
+        </section>
+
+        <section>
+            <h3>Data-ink ratio</h3>
+            $$ DI \rightarrow 1 $$
+            <p><i>But within reasonable bounds.</i></p>
+        </section>
+
+        <section>
+            <h3>Money principle</h3>
+            <i>
+                In time-series display of money, deflated and standarized units of monetary measurements are nearly always better than nominal units.
+            </i>
+        </section>
+
+        <section>
+            <h3>Context principle</h3>
+            <i>Graphics must not quote data out of context.</i>
+        </section>
+
+        <section>
+            <h3>Data relativism</h3>
+            <i>Display data relatively to the base line giving perspective, e.g. countries military spending per GDP.</i>
+        </section>
+
+        <!-- TODO
+        <section>
+            <h3>Statistical Illustrator Toolbox</h3>
+            <ul>
+                <li>data maps</li>
+                <li>time-series</li>
+                <li>space-time narrative design</li>
+                <li>relation graphics</li>
+            </ul>
+        </section>
+        -->
+
+        <section>
+            <h4>Let data set change your mindset</h4>
+            <p>Hans Rosling on Global Population Growth, box by box (short version)</p>
+            <iframe class="framed" data-autoplay style="min-height: 468px; min-width: 832px;" src="https://www.youtube.com/embed/fTznEIZRkLg?iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h4>Let data set change your mindset</h4>
+            <p>Hans Rosling on Global Population Growth (original)</p>
+            <iframe class="framed" data-autoplay style="min-height: 468px; min-width: 832px;" src="https://www.youtube.com/embed/3ks064fU7_M?iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h2>Beautiful data maps</h2>
+        </section>
+
+        <section>
+            <h3>Data Maps</h3>
+            <div class="content">
+                <div class="zoom-me" data-zoomed="img/cholera-outbreak-map.jpg">
+                <img style="height:480px;" src="img/cholera-outbreak-map.jpg" alt="John Snow Cholera Outbreak Map"/></div>
+            </div>
+            <div class="margin">
+                <p>John Snow's map, on the left, lead to removal of water pump handle that was the source of spreading Cholera, in the result saving hundreds of lives.</p>
+                <p>Think how more daunting task would it be to arrive at the same conclusion using tabular data.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Data Maps</h2>
+            The maps repay careful study. Notice how quickly and naturally our attention has been directed toward exploring the substantive content of the data rather than toward questions of methodology and technique.
+        </section>
+
+        <section>
+            <h3>March of Napoleon army</h3>
+            <p>Mouse over to zoom in.</p>
+            <div class="zoom-me" data-zoomed="img/napoleon.png">
+                <img src="img/napoleon-thumb.png" alt="Napoleon army march chart" />
+            </div>
+        </section>
+
+        <section>
+            <h3>Time-series</h3>
+            The most frequently used form of graphic design (about 75%).
+            <blockquote>
+                With one dimension marching along the regular rhythm of seconds, minutes, hours, days, weeks, months, years, centuries, or millennia, the natural ordering of the time scale gives this design a strength and efficiency o interpretation found in no other graphic arrangement.
+            </blockquote>
+            Best for big data sets with real variability.
+        </section>
+
+        <section>
+            <h3>Life cycle of japan beetle</h3>
+            <p>Interesting form of a time-series.</p>
+            <img src="img/japanese-beetle.jpg" alt="The Life Cycle of Japanese Beetle"/>
+        </section>
+
+        <section>
+            <h4>Pie chart explaining why pie charts are useless</h4>
+            <img class="stretch" src="img/pyramid-pie.png" />
+            <p>Abandon pie charts, they do not bring any information, but only confusion as the area and sections bring cognitive bias.</p>
+        </section>
+
+        <section>
+            <h3>How to best learn presenting?</h3>
+            <div class="fragment">
+                <h3 class="highlight">You got it! From experts!</h3>
+                <ul>
+                    <li><a href="https://www.reddit.com/r/dataisbeautiful/">r/dataisbeautiful</a> and counterexamples from <a href="https://www.reddit.com/r/dataisugly">r/dataisugly</a></li>
+                    <li><a href="http://www.amazon.co.uk/Edward-R.-Tufte/e/B000APET3Y/ref=sr_ntt_srch_lnk_1?qid=1456778035&sr=8-1">Any book by Edward Tufte</a></li>
+                    <li><a href="http://www.amazon.co.uk/Pop-Stand-Out-Any-Crowd/dp/0399532765">Pop!: Stand Out in Any Crowd by Sam Horn</a></li>
+                </ul>
+            </div>
+            <p class="fragment">Have other favourites? <a class="mm" href="mailto:nospam@thanks.com">Let me know!</a></p>
+        </section>
+
+        <section>
+            <h3>Examples of Data Journalism</h3>
+            <ol>
+                <li><a href="http://blogs.wsj.com/economics/2016/03/02/what-percent-are-you-2/">
+                What Percent Are You?
+            </a></li>
+            <li><a href="http://graphics.wsj.com/infectious-diseases-and-vaccines/">
+                Battling Infectious Diseases in the 20th Century: The Impact of Vaccines</a></li>
+            <li><a href="http://www.kicksusa.com/basketball-shoes-sales-data/">Dunking for Dollars - How Player Performance Impacts Shoe Sales</a></li>
+            <li><a href="http://www.npr.org/sections/money/2014/08/27/343415569/whos-in-the-office-the-american-workday-in-one-graph">Who's In The Office? The American Workday In One Graph</a></a></li>
+            </ol>
+        </section>
+
+        <!-- RET -->
+
+        <section>
+            <div class="ds-box">
+                <div class="circle se"><p>Software Engineer</p></div>
+                <div class="circle stat"><p class="fragment highlight-green">Statistician</p></div>
+                <div class="circle biz"><p>Business Analyst</p></div>
+                <p>Data Scientist</p>
+            </div>
+        </section>
+
+        <section>
+            Statistics and machine learning are very vast fields of knowledge. Here, we will just outline most commonly used techniques and remind the fundamentals.
+        </section>
+
+        <section>
+            <p class="pdf-header"><a href="http://static1.squarespace.com/static/54bf3241e4b0f0d81bf7ff36/t/55e9494fe4b011aed10e48e5/1441352015658/probability_cheatsheet.pdf">Probability Cheatsheet</a> by <a href="http://www.wzchen.com/">William Chen</a></p>
+            <object data="res/probability_cheatsheet.pdf" type="application/pdf" width="100%" height="640px" frameborder="0">
+                <p>It appears you don't have a PDF plugin for this browser.
+                    You can download the probability cheatsheet <a href="res/probability_cheatsheet.pdf">here</a>.</p>
+            </object>
+        </section>
+
+        <section>
+            <h3>Birth of Machine Intelligence</h3>
+            <blockquote>
+            Computers are learning to think, read, and write. They're also picking up human sensory function, with the ability to see and hear (arguably to touch, taste, and smell, though those have been of a lesser focus). Machine intelligence technologies cut across a vast array of problem types (from classification and clustering to natural language processing and computer vision) and methods (from support vector machines to deep belief networks).
+            </blockquote>
+        </section>
+
+        <section>
+            <h3>Birth of Machine Intelligence</h3>
+            <blockquote>
+                The giants in search (Google, Baidu), social networks (Facebook, LinkedIn, Pinterest), content (Netflix, Yahoo!), mobile (Apple) and e-commerce (Amazon) are in an incredible position. They have massive datasets and constant consumer interactions that enable tight feedback loops for their algorithms (and these factors combine to create powerful network effects) — and they have the most to gain from the low hanging fruit that machine intelligence bears.
+            </blockquote>
+        </section>
+
+        <section>
+            <h3>Birht of Machine Intelligence</h3>
+            <blockquote>
+                Similar to the big data revolution, which was sparked by the release of Google’s BigTable and BigQuery papers, we will see corporations release equally groundbreaking new technologies into the community. Those innovations will be adapted to new industries and use cases that the Googles of the world don’t have the DNA or desire to tackle.
+            </blockquote>
+        </section>
+
+        <section>
+            <h4>What Machine Learning can do for you?</h4>
+            <ul>
+                <li>make personalized recommendations</li>
+                <li>forecasting long-term loyalty</li>
+                <li>anticipating the future performance of employees</li>
+                <li>rating the credit risk of loan applicants</li>
+                <li>suggest friends or coworkers</li>
+                <li>interpolate missing data</li>
+                <li>suggest which customers to approach with special offer</li>
+                <li>find what products are bought together</li>
+                <li>reduce data</li>
+                <li>predict future behaviour</li>
+                <li>estimate campaign revenue</li>
+                <li>measure in vivo experiments performance</li>
+                <li>simplify decision process</li>
+                <li>and much more...</li>
+        </section>
+
+        <section>
+            <a href="http://scikit-learn.org/stable/tutorial/machine_learning_map/">Machine Learning Algorithms</a>
+            <div class="zoom-me" data-zoomed="img/sci-kit-learn-choosing-algo.png">
+                <img src="img/sci-kit-learn-choosing-algo-thumb.png" alt="sci-kit learn - choosing algorithm cheatsheet">
+            </div>
+        </section>
+
+        <section>
+            <h3>Lift</h3>
+            <p><i>Measure of targeting model (subset of population) performance at predicting or classification response measured against the whole population.</i> Otherwise, how much our discovery about certain group is significant, how does it compare to random sample.</p>
+            <p>The higher the lift the more significant the data.</p>
+            <p>For example, in credit risk decision tree, let say we classified a person with $ \mbox{income} > 50,000 $ and $ \mbox{age} < 35 $ with credit prepayment risk estimated at $ 25 \% $ compared to $ 5 \% $ for the whole population. Hence, our lift is $ \frac{25 \%}{5 \%} = 5.0$. </p>
+        </section>
+
+        <section>
+            <h4>Typical Machine Learning Tasks</h4>
+            <ul class="stretch">
+                <li>classification / class probability estimation - assignment of individuals to classes, e.g. people who are going to default on credit payment</li>
+                <li>scoring / probability estimation - simlar to classification, but with probability or numerical score, e.g. 85 out of 100 on prepayment score</li>
+                <li>regression / value estimation, e.g. how many people will renew their contracts given offer X</li>
+                <li>similarity matching - identifying similar individuals based on data know about them, e.g. people similar to the best paying customers</li>
+                <li>clustering - grouping of individuals without any labels, with the goal of discovering if population forms any clusters, e.g. investigating if sales team should prepare multiple different offers</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>Typical Machine Learning Tasks</h4>
+            <ul class="stretch">
+                <li>co-occurrence grouping - grouping entities based on transactions involving them, e.g. what items are commonly purchuased together</li>
+                <li>profiling / behaviour description - attempts to characterize typical behaviour of a group, e.g. how many gallons of milk typical household buys weekly</li>
+                <li>link prediction - predicts connections between data items, e.g. friends (Facebook) and colleagues (LinkedIn) suggestions</li>
+                <li>data reduction - replacing large data set with smaller, e.g. replacing movie preferences with genres preference</li>
+                <li>casual modeling - discovering what events and actions influence other, e.g. website A/B testing in funnel optimisation: 1 versus multiple steps checkout measure against conversion rate</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>MI Landscape (mouseover to zoom)</h4>
+            <p style="font-size: .5em">As of 2015, 2573 startups and companies developing machine intelligence software.</p>
+            <div class="zoom-me" data-zoomed="img/ml-landscape.jpg">
+                <img src="img/ml-landscape-thumb.jpg" alt="Machine Intelligence Landscape" />
+            </div>
+        </section>
+
+        <section>
+            <h3>Wide data</h3>
+            <p>Data can be expanded in one of two ways:</p>
+            <ul>
+                <li>you can collect more of it; thinking tabularly increase the number of rows or</li>
+                <li>collect more information about existing entities; in terms of a table, increasing the number of columns</li>
+            </ul>
+            <p><i>Wide data is data with many columns.</i></p>
+        </section>
+
+        <section>
+            <h4>Separating the signal from the noise</h4>
+
+            <ol>
+                <li>feature extraction - what data to use in the model, working with incomplete data, creating new features aggregating other (also including scores), etc.</li>
+            <li>regularization - how to weight data in the model</li>
+            <li>cross-validation - measuring accuracy of the model</li>
+            </ol>
+
+           <p>More information about this topic: <a href="https://hbr.org/2015/07/what-every-manager-should-know-about-machine-learning">What Every Manager Should Know About Machine Learning</a></p>
+        </section>
+
+        <!-- TODO: slide about feature extraction -->
+
+        <section>
+            <h3>Regularisation</h3>
+
+            <p>How to tell that our variables reflect signal, but not noise?</p>
+            <p>Should include penalty for complexity (prefer simple models as they are more general).</p>
+            <p>Good regularisation prevents over-fitting.</p>
+            <p>Popular regression method for variable selection and regularisation is <a href="https://en.wikipedia.org/wiki/Lasso_(statistics)">LASSO</a>.</p>
+        </section>
+
+        <section>
+            <h3>Cross-validation</h3>
+
+            <p>How to verify that the model actually makes good predictions?</p>
+
+            <p>Partition set into training and validation sets, then train the model using training set, and use validation as unseen data.</p>
+
+            <p>10-fold cross-validation - divide data into 10 equally sized buckets; at each step train model using data from 9 buckets and verify using the remaining one, iterate 10 times, every time using different bucket for validation; measure validation score. Enables us to arrive at good confidence level with less data.</p>
+        </section>
+
+        <section>
+            <h3>Mistakes to avoid</h3>
+
+            <p>Confusing prediction and casual model - do two variables occur together and are influence by something else? Avoid variables that already indicate predicition result, e.g. session end timestamp in predicting how long typical user session lasts (we will not even have that data unless the session ends, so bad estimator).</p>
+
+            <p>Seeing causation where there is none. Well trained algorithm should make good predictions for environment it seen, so the more stable our environment the more valuable our predictions. However, if we move algorithm to new environment we may not get good predictions it is one of human biases - we try to find patterns and causation everywhere.</p>
+        </section>
+
+        <section>
+            <h3>Machine Learning Toolbox</h3>
+            <p>Lots of software, but here we will concentrate on using <i>scikit-learn</i> and Apache Spark <i>MLLib</i>.
+        </section>
+
+        <!-- TODO: Describe most popular machine learning algorithms
+
+        unsuprvised
+            suprvised
+            and ?
+
+            Decision-tree - finance, organisation decisions, loans, etc.
+
+        -->
+
+        <section>
+            <h3>Decision-trees</h3>
+            <p>One of the most popular machine learning forms and representations. Often used in operational reseach as it allows to quickly make decisions based on number of factors.</p>
+
+            <p>Great study of decision-trees: <a href="https://hbr.org/2015/11/how-machines-learn-and-you-win">How Machines Learn an You Win?</a></p>
+        </section>
+
+        <section>
+            <h3>Statistics</h3>
+            Two important types of statistics:
+            <ul>
+                <li>summary statistics - numbers such as mean, median, variance, etc. summarizing the whole population and</li>
+                <li>statistics in classical sense - hypothesis testing (e.g. if customers in London have 30% risk of churning compared to nation-wide 15% is our data right?), significance estimation, etc.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Machine Learning Resources</h3>
+            <ul>
+                <li><a href="http://www.amazon.co.uk/Machine-Learning-Probabilistic-Perspective-Computation/dp/0262018020/">Machine Learning: A Probabilistic Perspective by Kevin Murphy</a></li>
+                <li><a href="http://www.amazon.co.uk/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738/">Pattern Recognition and Machine Learning by Christopher Bishop</a></li>
+                <li><a href="http://www.amazon.co.uk/Information-Theory-Inference-Learning-Algorithms/dp/0521642981/">Information Theory, Inference, and Learning Algorithms by MacKay</a></li>
+            </ul>
+            <!-- TODO: more resources
+                math:
+                coding a matrix
+                python for data analysis
+
+                ml:
+                machine learning practical online book
+            -->
+        </section>
+
+        <section>
+            <div class="ds-box">
+                <div class="circle se" style="background-color: #6c0f0f"><p class="fragment highlight-red">Software Engineer</p></div>
+                <div class="circle stat"><p>Statistician</p></div>
+                <div class="circle biz"><p>Business Analyst</p></div>
+                <p>Data Scientist</p>
+            </div>
+        </section>
+        <section>
+            <h4>Big Data Landscape (mouseover to zoom)</h4>
+            <div class="zoom-me" data-zoomed="img/bd-landscape.png">
+                <img src="img/bd-landscape-thumb.png" alt="Big Data Landscape 2016" />
+            </div>
+        </section>
+
+        <section>
+            <h3>Types of data science tools</h3>
+            <p>Data science tools naturally divide into two categories among several dimensions, such as open and close source, or visual and coded.</p>
+            <p>Most often, visual and closed source tools have advantage when it comes to non-technical users, e.g. Tableau. However, there are platform solutions such as Google's BigQuery (e.g. used by Spotify to make songs recommendations and match adverbs for free users) and complete solutions (from infastructure up to dashboard).</p>
+            <p>However, the problem with the closed source is a glass ceiling. What it does it does very well, but once you want to do something out of intended use you often are out of luck. This sometimes can poses serious limitation.</p>
+        </section>
+
+        <section>
+            <h3>Types of data science tools</h3>
+            <p>However, open source and programming heavy tools will give you the power you need. There is going to be initial inertia with setting up the environment (infrastructure, platform, visualisations, etc.), but once done, a lot of parts are going to be reusable.</p>
+            <p>Imporatntly, this set-up allows for ownership of the solution and even automated data-driven decision making, e.g. once you model link prediction you can develop optimised model and deploy it to suggest friends on YourBook.com.</p>
+        </section>
+
+        <section>
+            <h3>Types of data science tools</h3>
+            <p>Open source tools were long time developed by many cutting-edge companies such as Google, Yahoo, Continuum, and big open source community that they easily match advanced closed source software capabilities and often exceed them giving the incredible flexibility and documentation.</p>
+        </section>
+
+        <section>
+            <h4>What tools data scientists use?</h4>
+            <ul>
+                <li>Core: Python, R, and SQL</li>
+                <li>Distributed OS: Yarn, Mesos</li>
+                <li>Cluster computing: Hadoop, Spark</li>
+                <li>Algorithms: scikit-learn, NumPy, SciPy, MLLib, GraphX, NetworkX, ...</li>
+                <li>Data warehousing: Hive, Pig</li>
+                <li>Data visualisation: d3.js, matplotplib, ggplot, R/Shiny</li>
+                <li>Composition: Jupyter Notebook</li>
+                <li>... and many more</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Lingua Franca</h3>
+            <p>Python and R are most commonly used programming languages for data scientific programming. Both have their pros and cons, but recently, thanks to years of scientific community contribution and plugins into other frameworks, Python emerged as both dominant and glue language of data science, while R and SAS are becoming less popular at scale.</p>
+            <p>R still very useful, but only Python gives you ability to build everything from platform, via optimised code, up to dashboards in one language.</p>
+        </section>
+
+        <!-- TOOD: DATA WAREHOUSING -->
+
+        <section>
+            <h3>Software stack</h3>
+            <ul>
+                <li>Python - a glue language</li>
+                <li>Continuum Anaconda containing <a href="https://docs.continuum.io/anaconda/pkg-docs">$ > 400 $ of the most popular Python packages</a> for science, math, engineering, and data analysis, including Pandas, NumPy, and scikit-learn amongst many others</li>
+                <li>IPython and Jupyter Notebooks</li>
+                <li>Apache Hadoop (here we will use Hadoop 2.6)</li>
+                <li>Apache Spark and its libraries such as MLLib and GraphX</li>
+                <li>Cython compiler and Multiprocessing Python's library for optimisation and harnessing cores</li>
+                <li>Databases such as Neo4j (graph database)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Writing Python</h3>
+            <p>You can use many different tools for writing Python, but my personal favourites are</p>
+            <ul>
+                <li>IDE: PyCharm by JetBrains (<a href="https://www.jetbrains.com/student/">free student licenses available</a>)</li>
+                <li>Exploratory work and documentation: Jupyter Notebook</li>
+                <li>Console: IPython Qt Console</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>PyCharm</h3>
+            <img class="stretch" src="img/pycharm.png" />
+        </section>
+
+        <section>
+            <h3>Jupyter Notebook</h3>
+            <img class="stretch" src="img/jupyter.png" />
+        </section>
+
+        <section>
+            <h4>IPyton Qt Console</h4>
+            <img class="stretch" src="img/qtconsole.png" alt="IPython Qt Console" />
+        </section>
+
+        <section>
+            <h3>Python - a glue language</h3>
+            <p>Python is a great language to work with data because mathematical formulas and algorithms can be developed almost at literal translation and pseudo-code levels. But, at the same time we have access to enormous amount of libraries and frameworks allowing us to concentrate on the problem at hand.</p>
+            <p>Further to that, Python is fully portable, have bindings to many other popular frameworks and libraries (e.g. PySpark binding to Apache Spark), and can be very efficient (plain Python $ \rightarrow $ NumPy $ \rightarrow $ Cython / PyPy, ...) .</p>
+        </section>
+
+        <section>
+            <h3>Continuum Analytics</h3>
+            <ul>
+                <li><a href="https://www.continuum.io/anaconda">Anaconda</a> is the fastest growing open data science platform with <a href="https://docs.continuum.io/anaconda/pkg-docs">$ > 400 $ of the most popular Python packages</a> for science, math, engineering, and data analysis, including Pandas, NumPy, and scikit-learn amongst many others. There is also even more powerful version of Anaconda for enterprise.</li>
+                <li><a href="http://conda.pydata.org/miniconda.html">Miniconda</a> - lightweight version of Anaconda.</li>
+                <li><a href="http://conda.pydata.org/docs/">Conda</a> - package and environment management system.</li>
+            </ul>
+            <p>To get started, download and install Anaconda from <a href="https://www.continuum.io/downloads">here</a>. I strongly recommend Python 3.x version as it is where the world is heading now.</p>
+        </section>
+
+        <section>
+            <h3>Jupyter Notebooks</h3>
+            <ul>
+                <li>Comes together with Anaconda, to run simply type
+                    <img src="img/cmd-jupyter-notebook.png" />
+                    into the Anaconda console, being located in a folder where you want to store your notebooks.</li>
+                <li>Up to IPython 3.X those were called IPython Notebooks and were monolithic part of IPython, but from IPython 4.0 language agnostic modules were separated from IPython, one of which became project <a href="http://jupyter.org/">Jupyter</a>. You can read about <a href="http://blog.jupyter.org/2015/04/15/the-big-split/">the big split here</a>.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>The Big Split and Jupyter</h3>
+            <p>Because of the big split, you will often find confusing information as some things changed significantly in the language agnostic projects compared to their counterparts in IPython 3.X, but also the knowledge is Googlable under IPython and new module name. It introduces some degree of chaos and it is good to be aware of that.</p>
+            <p>Example of such change is integration of Jupyter Notebook with PySpark which because of absence of profiles in Jupyter compared to IPython must be implemented differently. But, overwelming amount of information relates profile-based solution.</p>
+        </section>
+
+        <section>
+            <h3>Jupyter and PySpark</h3>
+
+            <p>Since, profile solution is unavailable in Jupyter, now the best approach to use PySpark with Python notebooks is to install <i>findspark</i> module via <i>conda</i> and use it to get to Spark Context.</p>
+
+            <pre><code class="python">
+    import findspark
+    findspark.init()
+
+    import pyspark
+    sc = pyspark.SparkContext()
+            </code></pre>
+
+            <p>To install findspark, simply type <i>conda install findspark</i> into the Anaconda console.</p>
+        </section>
+
+        <section>
+            <h3>Apache Hadoop</h3>
+            <p>Apache Hadoop is an open-source software framework written in Java for distributed storage and distributed processing of very large data sets on computer clusters built from commodity hardware. All the modules in Hadoop are designed with a fundamental assumption that hardware failures are common and should be automatically handled by the framework.</p>
+            <p>Based on <a href="http://research.google.com/archive/mapreduce.html">Map/Reduce paper</a> published by Google 10 years ahead of Hadoop development.</p>
+            <p>Hadoop is not only Map/Reduce, but a big ecosystem with Hadoop core being: Hadoop Commons, Hadoop Distributed File System (HDFS), Hadoop YARN (resource management), and finally Hadoop MapReduce itself.</p>
+        </section>
+
+        <section>
+            <h3>Hadoop Ecosystem</h3>
+            <img class="stretch plain" src="img/hadoop-ecosystem.png" />
+        </section>
+
+        <section>
+            <h3>Apache Spark</h3>
+            <p>Apache Spark is a fast and general engine for big data processing, with built-in modules for streaming, SQL, machine learning, and graph processing. It is written in Scala.</p>
+            <p>The greatest difference from Hadoop is the ability to run iterative algorithms efficiently and manage caching and distribution of data. As most machine learning algorithms work like this Apache Spark opened many data science applications.</p>
+            <p>Worth to note, that although we can write code in Python, but PySpark is only translating Python code to Scala, making it slower. <i>If you want to write optimised Spark code and use the latest features then you should write it in Scala.</i></p>
+        </section>
+
+        <section>
+            <h3>Local Spark Instance</h3>
+
+            <p>To launch Apache Spark locally add the following parameters to PySpark:</p>
+
+            <pre><code class="bash">
+                --master local[2] pyspark-shell
+            </code></pre>
+
+            <p>Conveniently, the parameters can also be stored in an environment variable <i>PYSPARK_SUBMIT_ARGS</i>.</p>
+        </section>
+
+        <!-- TODO: Spark libraries in more detail -->
+
+        <section>
+            <h3>Databases</h3>
+            <p>Do not fall into a trap of underestimating databases. They are gems that were polished for many years.</p>
+            <p>Even if you will not use database for data science, most likely, all data that you will need to integrate will come from databases. Sometimes data from as many as hundreds of databases with multitude of tables needs to be integrated before any analysis can be done.</p>
+            <p>Databases are also good for data exploration, so it is good to know at least basics of most popular querying languages, e.g. one SQL dialect (relational), MongoDB (document-based), and Cypher (graph).</p>
+            <p>... and with NoSQL revolution many databases are horizontally scalable such as Hadoop and Spark.</p>
+        </section>
+
+        <section>
+            <h3>Our set-up</h3>
+            <p><i>We will concentrate on using Anaconda libraries and PySpark code via Jupyter Notebooks.</i></p>
+        </section>
+
+        <section>
+            <p class="fragment semi-fade-out" data-fragment-index="1">OK, so we discussed what does it take to be a data scientist and what tools they use, but what exactly they work on and where?</p>
+
+            <h2 class="fragment reveal" data-fragment-index="2">Where data scientists work?</h2>
+        </section>
+
+        <section>
+            <blockquote>
+                Although “Big Data” may have been the hot topic last year, this year data science has been
+                permeating the discussion in every board room across the country. Nearly every company wants to
+                know more about data scientists: Who are they? What do they do? How do we get one? This
+                report endeavors to answer many of those burning questions, including perhaps the most burning
+                question of all: What do they earn?
+            </blockquote>
+            <div class="source">
+                <a href="http://www.burtchworks.com/files/2014/07/Burtch-Works-Study_DS-2015_final.pdf">Burtch Works Study - Data Science 2015.pdf</a>
+            </div>
+        </section>
+
+        <section>
+            <h3>Where Data Scientists work? The answer may surprise you.</h3>
+            <p>Big companies have the most of data, so the most opportunities await there rather than in start-ups. Usually, start-ups do not have access to enough data to hire data scientists, beside those ones that develop new tools and own the data solutions (e.g. Palantir).</p>
+            <p class="fragment reveal"><i>Big companies sit on a big pile of gold (data) that awaits to be dug up.</i></p>
+        </section>
+
+        <section>
+            <h3>Where data scientists work?</h3>
+            <ul>
+                <li>Retailers: Google (AdWords), Amazon (who bought this bought also this), Spotify (you may like also those songs), Target (<a href="http://www.businessinsider.com/the-incredible-story-of-how-target-exposed-a-teen-girls-pregnancy-2012-2?IR=T">we know about your pregnancy before you father</a>), stocking up depending on weather, cataclysms, events, holidays, trends, personalized services, special offers, preventing churning and cord-cutting, etc.</li>
+                <li>Government agencies: NSA, CIA, and others predict and detect fraud, death, and even terrorism (actually it is <a href="http://www.forbes.com/sites/andygreenberg/2013/08/14/agent-of-intelligence-how-a-deviant-philosopher-built-palantir-a-cia-funded-data-mining-juggernaut/#cd9833b3da82">how Palantir came to be</a>), detecting human traficking, mananging disaster evacuations, etc.</li>
+                <li>Banks: Chase Bank predicts credit default and prepayments to give better rates and attract more customers, Capital One made a fortune on such predictions, and every other bank, does similar things</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Where data scientists work?</h3>
+            <li>Link prediction: Facebook knows who you are good friends with better than you and LinkedIn predicts when you are about to change a job</li>
+            <li>Energy sector: gauging consumption pattern (e.g. UK dreaded <a href="https://en.wikipedia.org/wiki/TV_pickup">TV pickup</a> for a cup of tea), preventing accidents (nowadays there are so many sensors that many accidents such as Deepwater Horizon, Exxon Valdez or Fukushima  can be predicted and prevented), ordering spare parts before they need replacement, weather-related factor accounting for renewable energy (e.g. wind, solar, tidal), etc. Read more at <a href="http://www.mastersindatascience.org/industry/energy/">Data Science in Energy</a>.</li>
+            <li>Biotechnoloy: personalised medicine, predicting outbreaks, etc.</li>
+        </section>
+
+        <section>
+            <h3>Where data scientists work?</h3>
+            <li>Finance: sentiment analysis - analysing news, information to predict the events, stock movements, etc., automated credit risk assessment, fighting financial fraud, providing more accurate pricings, predicting stock movements, commodities values in connected markets, etc., etc.</li>
+            <li>Gaming - preventing cheating, bad behaviour, optimising DAU, MAU, etc.</li>
+
+            <p>If you are interested where data scientists work and what they do you will find <a href="http://www.amazon.co.uk/Predictive-Analytics-Power-Predict-Click/dp/1119145678/">Predictive Analytics: The Power to Predict Who Will Click, Buy, Lie, or Die by Eric Siegel and Thomas H. Davenport</a> very interesting. It covers data science case studies for multitude companies.</p>
+            <p>Very good coverage of real world applications of data science is discussed at and <a href="http://www.mastersindatascience.org/industry/">Data Science in the Real World</a></p>
+        </section>
+
+        <section>
+            <h3>Where data scientists work?</h3>
+            <p><i>Data science is becoming so important part of decision making process that it is starting hard to get C-suite job without at least basic undestanding of data science.</i></p>
+            <!-- TODO: source -->
+        </section>
+
+        <section>
+            <h3>How much data scientist make?</h3>
+            <blockquote class="expanded">
+                Seventy-one percent of the sample consists of individual contributors. Their median base salary is $\$ 120,000 $, and 71% are eligible for a bonus. The median bonus received is $ \$15,650$. The other 29% of the sample are managers. Their median base salary is $ \$170,000 $, and 82% are eligible for a bonus. The median bonus received is $ \$36,000 $.
+            </blockquote>
+            <div class="source">
+                <a href="http://www.burtchworks.com/files/2014/07/Burtch-Works-Study_DS-2015_final.pdf">Study performed on 371 data scientists in the US by Burtch Works.</a>
+            </div>
+        </section>
+
+        <section>
+            <h3>Advice for Data Scientists by Burtch Works</h3>
+            <ul>
+                <li>Plan your career carefully. Evaluate how can you learn, grow skill set, and position yourself to achieve long-term goals.</li>
+                <li>Consider the level of support data science has organization-wide. Your success will depend on ability to present your findings and solutions to leadership.</li>
+                <li>Make sure the organization (or team) has the funding and patience to see the fruits of your labor – it won’t happen overnight.</li>
+                <li>Be realistic about start-ups. Very few startups become profitable, let alone reach the success of Facebook or Uber, and most fail within a few years.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Advice for Data Scientists by Burtch Works</h3>
+            <ul>
+                <li>Build your business knowledge. . The number one complaint we hear from companies about data scientists is that they lack business knowledge and skills. Your analysis must be relevant to company business goals.</li>
+                <li>Develop your communication skills. Presenting findings to a non-technical audience (such as the marketing team or the C-Suite) is a crucial part of being a data scientist. Presenting your findings can be very challenging, so develop your storytelling skills.</li>
+            </ul>
+        </section>
+
+        <!-- TODO
+        <section>
+            <h3>Who is hiring?</h3>
+            http://careers.goodeggs.com/
+        </section>
+
+        <section>
+            Citizens of the world
+            Open data
+            links
+
+            how big impact open data can have (e.g. parking spot)
+        </section>
+        -->
+
+        <section>
+            <h3>Market share per area</h3>
+            <table>
+            <tr><td>Technology</td><td>40%</td></tr>
+            <tr><td>Marketing Services</td><td>14%</td></tr>
+            <tr><td>Financial Services</td><td>12%</td></tr>
+            <tr><td>Retail</td><td>7%</td></tr>
+            <tr><td>Corporate-Other</td><td>7%</td></tr>
+            <tr><td>Consulting</td><td>7%</td></tr>
+            <tr><td>Gaming</td><td>6%</td></tr>
+            <tr><td>Healthcare/Pharma</td><td>4%</td></tr>
+            <tr><td>Government</td><td>3%</td></tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Collaboration</h3>
+            <p>To engineer successful data sience product data scientist often work in close collaboration with other teams such as marketing, data products, operations, business decisions, product.</p>
+        </section>
+
+        <!-- TECHNICAL -->
+
+        <section>
+            <h2>Data Science Process</h2>
+        </section>
+
+        <section>
+            <h3>Process</h3>
+            <ol>
+                <li>Data integration - pull data from many data management systems, resolve any incosistencies (e.g., missing values, different timezones), and reshape.</li>
+                <li>Data exploration - explore and visualize data. Get intuition about it and observe patterns.</li>
+                <li>Solution development - develop and implement algorithm solving your problem.</li>
+                <li>Knowledge management - if you need to manage user privileges or privacy</li>
+                <li>DS product ownership - make results available to non data scientists (e.g. analysis runnable from Django website)</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Alternative taxonomy (OSEMN / Snice)</h3>
+            <ul>
+                <li>Obtain:  pointing and clicking does not scale</li>
+                <li>Scrub: the world is a messy place</li>
+                <li>Explore: You can see a lot by looking</li>
+                <li>Model: always bad, sometimes ugly</li>
+                <li>iNterpret: "The purpose of computing is insight, not numbers."</li>
+            </ul>
+            <div class="source">
+                <a href="http://www.dataists.com/tag/osemn/">A Taxonomy of Data Science</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Data integration</h2>
+            <p>Goal of data integration is to bring all data from different systems in different formats into one data
+            set that can be analysed.</p>
+            <p>Example, you come there 100 different databases, in different time zone formats, with some values missing
+            etc.</p>
+        </section>
+
+        <section>
+            <h3>80/20 rule of data science</h3>
+            <p>You spend 80% of time on data preparation and only 20% on the analysis.</p>
+            <p>Data integration is not the best use of data scientist time,
+                but unfortunately this often is the reality.</p>
+            <p>This problem can be solved by either:</p>
+            <ul>
+                <li>data integration specialist who will handle this side of a problem or/and</li>
+                <li>a specialised platform.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Data integration specialist</h3>
+            <p>This is a person that will come from the company to which you work as contractor preparing the data for
+                you to work with or at least giving the guide over the available data and working with you explaining
+                what it means and resolving any problems.</p>
+        </section>
+
+        <section>
+            <h3>Platforms</h3>
+            (idea and examples)
+            Insights -- Dashboards
+            Analysis
+            Data lake
+            Infrastructure
+        </section>
+
+        <section>
+            <h3>Precision/accuracy/generalisation tradeoff</h3>
+            Also need to take time constraints into account
+            Less accurate data delivered quickly may be of greater business value than very accurate delivered too late
+            Balancing with other priorities
+        </section>
+
+        <section>
+            <h3>Popcorn method</h3>
+            <blockquote>
+                You stare at the data (possibly eating popcorn) until something pops up.
+            </blockquote>
+            This approach may sounds stunning, but with data science a lot of things come with experience and domain knowledge.
+        </section>
+
+        <section>
+            <h3>Data preparation</h3>
+            <p>When beginning to work with data you should ask yourself 3 questions:</p>
+            <ul>
+                <li>What data do I have?</li>
+                <li>What data do I need?</li>
+                <li>What is the most evil thing I can do with data?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>What data do I have?</h3>
+            What data is there?
+
+        </section>
+
+        <section>
+            <h3>What data do I need?</h3>
+            What data do I need for my analysis?
+        </section>
+
+        <section>
+            <h3>What is the most evil thing I can do with data?</h3>
+            <p>Not really evil, but helps to think about possibilities, really spark the discussion, but also helps to
+            think about what protections need to be put in the place.</p>
+        </section>
+
+        <section>
+            Data science algorithms - biggest differentiator of statistician and DS (CS)
+        </section>
+
+        <section>
+            <h3>Data exploration</h3>
+            what problem are we trying to solve?
+            what problems are most important?
+            how to choose most important one?
+            OLAP - Online Analytical Processing
+            OLTP - Online Transaction Processing
+            <br />
+            <img class="stretch" src="http://datawarehouse4u.info/images/olap_vs_oltp.jpg" />
+        </section>
+
+        <section>
+            <blockquote>
+                The purpose of computing is insight, not numbers.
+            </blockquote>
+            <author>
+                <p>Richard Hamming, 1961</p>
+            </author>
+        </section>
+
+        <section>
+            <h3>Solution development</h3>
+            We need to develop code that solves our problem or gains the insight.
+        </section>
+
+        <section>
+            <h3>Knowledge management</h3>
+            <p>We need to manage who gets access to the results and how data is shared across country borders,
+            who inside company can read it, etc.</p>
+        </section>
+
+        <section>
+            <h3>Ownership</h3>
+            Telling a story - presenting the insight; communicating results to varied audiences; advocating for data within an organisation
+            Developing application
+            Making the analysis rerunable
+        </section>
+
+
+        <section>
+            <h2>Data</h2>
+        </section>
+
+        <section>
+            <h3>Obtaining data and data sets for experimentation</h3>
+            https://scraperwiki.com/
+            http://selectorgadget.com/
+        </section>
+
+        <section>
+            Data science process example
+
+            Some interesting problem to solve with all 5 steps
+
+            -- link to notebook
+        </section>
+
+        <section>
+            <h2>Data Science @ Work</h2>
+        </section>
+
+        <section>
+            Day of Data Scientist work
+            Research
+            Insight
+            App enginerring
+            Exploration
+        </section>
+
+        <section>
+            How data transforms business
+        </section>
+
+        <section>
+            <h2>Data</h2>
+        </section>
+
+        <section>
+            Data-driven enterprise
+            Analytical enterprise
+        </section>
+
+        <section>
+            <h2>Examples from Real World</h2>
+        </section>
+
+        <section>
+            <h3>Netflix Challenge</h3>
+        </section>
+
+        <section>
+            <h3>Recommendation engines</h3>
+            Amazon
+            Netflix
+            Spotify
+        </section>
+
+        <section>
+            <h3>Fraud detection</h3>
+            PayPal
+            banks
+        </section>
+
+        <section>
+            <h3>Advertising</h3>
+            LinkedIn
+            Google
+            Facebook
+            eBay, Amazon
+        </section>
+
+        <section>
+            <h3>Customer attortion</h3>
+            banks
+        </section>
+
+        <section>
+            <h3>Marketing</h3>
+            Adobe
+        </section>
+
+        <section>
+            <h3>Government</h3>
+        </section>
+
+        <section>
+            Optimising power grid efficiency
+        </section>
+
+        <section>
+            Fighting terrorism and crime
+        </section>
+
+        <section>
+            Cyber security
+        </section>
+
+        <section>
+            Situation awarness in defense
+        </section>
+
+        <section>
+            Financial forecasting dynamics
+        </section>
+
+        <section>
+            Early detection in health care
+        </section>
+
+        <section>
+            Optimising procedures
+            NY ambulances - crew sitting places (toilet and coffee)
+            response questionary
+            saved 1 minute and in turn many lives
+        </section>
+
+        <section>
+            Optimising business procedures
+            UPS never makes left turns
+            and they update routes in real-time
+        </section>
+
+        <section>
+            Google maps + traffic
+            (but most boring)
+        </section>
+
+        <section>
+            Referral, , etc. - who are my customers?
+
+        </section>
+
+        <section>
+            Loyalty clubs just to track us
+        </section>
+
+        <section>
+            NLG: estate advertisements generation
+            interesting bias embedded in the language
+            cosy, small < 400sq ft
+            big, large, spacy - normal or under normal size
+            <!-- TODO: source -->
+        </section>
+
+        <section>
+            NLG: automated sport article writing
+            <!-- TODO: source -->
+        </section>
+
+        <section>
+            Future?
+            Customer walks in...
+            ... and computer system displays you what one product he or she should buy (you to sell)
+            (e.g. apple sauce)
+            <!-- TODO: source -->
+        </section>
+
+        <section>
+            IoT
+        </section>
+
+        <section>
+            <h3>Organisation</h3>
+        </section>
+
+        <section>
+            To follow up people
+            Jeremy Howard
+        </section>
+
+        <section>
+            To follow up blogs
+        </section>
+
+        <section>
+            Homework
+            https://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn?language=en#t-1144783
+            https://youtu.be/GXjjMSn2Nws
+            d3.js video
+        </section>
+        <!-- END SLIDES -->
+
+
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/Event.js"></script>
+<script src="js/Magnifier.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        math: {
+            mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+            config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+                /*
+            {
+                src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            */
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true},
+            { src: 'plugin/math/math.js', async: true }
+        ]
+    });
+
+</script>
+
+<script>
+
+    Reveal.addEventListener('ready', function (event) {
+        $('.fire').fire({
+            speed:60,
+            maxPow:9,
+            gravity:4,
+            flameWidth:20,
+            flameHeight:400,
+            plasm:true,
+            fireTransparency:.35,
+            fadingFlameSpeed:4,
+            mouseEffect:true
+        });
+        $('.fire').fire('stop');
+        console.log('Fire set-up, Sir, yes fire me Sir!')
+        window.fireOn = false;
+
+        $(".zoom-me").evenZoom();
+
+        // compute years since Aristotle marked at 334 B.C.
+        var years = (new Date()).getFullYear() - new Date(-334);
+        console.log('Years since Aristotle ', years);
+        $('#time-since-aristotle').text(years);
+
+        $(function () {
+            $("a.mm").click(function (e) {
+                console.log('Revealed e-mail address.');
+                var secret = function () { return atob('am9obkBocmFmZW4uY29t') };
+                $(this).attr("href", 'mailto:' + secret());
+                $(this).text(secret());
+                $(this).off("click");
+                e.preventDefault();
+            });
+        });
+    });
+
+    Reveal.addEventListener('slidechanged', function (event) {
+        console.log('event', event);
+        console.log('State', event.currentSlide.dataset.state);
+        if (event.currentSlide.dataset.state !== 'fire-on' && window.fireOn) {
+            $('.fire').fire('stop');
+            console.log('Fire stopped. Good work fire department!')
+            window.fireOn = false;
+        }
+    });
+
+    Reveal.addEventListener('fire-on', function(event) {
+        if (!fireOn) {
+            $('.fire').fire('play');
+            console.log('Let\'s play with fire...');
+            window.fireOn = true;
+        }
+    });
+</script>
+
+</body>
+</html>
