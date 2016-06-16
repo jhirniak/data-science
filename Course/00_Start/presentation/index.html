@@ -2122,7 +2122,7 @@
         $(function () {
             $("a.mm").click(function (e) {
                 console.log('Revealed e-mail address.');
-                var secret = function () { return atob('am9obkBocmFmZW4uY29t') };
+                var secret = function () { return atob('akBoaXJuaWFrLmNvbQ==') };
                 $(this).attr("href", 'mailto:' + secret());
                 $(this).text(secret());
                 $(this).off("click");
